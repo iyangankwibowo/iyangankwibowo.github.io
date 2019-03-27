@@ -21,6 +21,8 @@ p.welcome {
 }
 
 p.sub {
+    width: 550.5px;
+    height: 88px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -197,3 +199,34 @@ a.rec4green {
 .about:hover h3 {
     color: #fff;
 }
+
+@media only screen and (max-width: 770px) {
+    p.welcome {
+        width: 300px;
+        height: 48px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.35;
+        letter-spacing: 0.7px;
+        text-align: left;
+        color: #ffffff;
+    }
+    
+    p.sub {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 250px;
+        height: 48px;
+        font-size: 10px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.39;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+} 
+
