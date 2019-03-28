@@ -7,7 +7,7 @@
 }
 
 p.welcome {
-    width: 550.5px;
+    width: 60%;
     height: 88px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40.5px;
@@ -71,7 +71,7 @@ p.sec2 {
 }
 
 p.sec2-desc{
-    width: 365.5px;
+    width: 90%;
     height: 74px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 13.5px;
@@ -124,7 +124,7 @@ h5.sec4-box {
   }
 
 p.sec4 {
-    width: 347.5px;
+    width: 50%;
     height: 38px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 28px;
