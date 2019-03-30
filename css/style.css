@@ -8,9 +8,9 @@
 
 p.welcome {
     width: 60%;
-    height: 88px;
+    height: 70px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40.5px;
+    font-size: 35px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -22,7 +22,7 @@ p.welcome {
 
 p.sub {
     width: 550.5px;
-    height: 88px;
+    height: 60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -58,9 +58,9 @@ a.rec-header {
 
 p.sec2 {
     width: 348px;
-    height: 121px;
+    height: 90px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 44.5px;
+    font-size: 36px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -72,7 +72,7 @@ p.sec2 {
 
 p.sec2-desc{
     width: 90%;
-    height: 74px;
+    height: 88px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 13.5px;
     font-weight: normal;
