@@ -10,6 +10,11 @@ navbar ul{ margin-bottom: 0; }
     background-color: #ffffff;
 }
 
+section.gambar {
+    padding-top: 15%;
+    padding-bottom: 22%;
+}
+
 p.welcome {
     width: 70%;
     height: 70px;
@@ -22,6 +27,7 @@ p.welcome {
     letter-spacing: 0.7px;
     text-align: left;
     color: #ffffff;
+    margin-bottom: 5%;
 }
 
 p.sub {
@@ -61,38 +67,46 @@ a.rec-header {
 }
 
 p.sec2 {
-    width: 348px;
-    height: 90px;
+    width: 100%;
+    height: 70px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 36px;
+    font-size: 300%;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.36;
     letter-spacing: normal;
-    text-align: left;
+    text-align: justify;
+    display: inline-block;
     color: #4a4b4b;
+    padding-left: 5%;
 }
 
 p.sec2-desc{
     width: 90%;
-    height: 88px;
+    height: 70px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 13.5px;
+    font-size: 150%;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.37;
     letter-spacing: normal;
-    text-align: left;
+    text-align:justify;
     color: #4a4b4b;
+    margin-bottom: 15%;
+    padding-left: 5%;
   }
 
+div.video {
+    margin-top: 12%;
+}
+
 p.sec3 {
-    width: 400px;
-    height: 66.5px;
+    width: 100%;
+    height: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
+    font-size: 300%;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -128,16 +142,16 @@ h5.sec4-box {
   }
 
 p.sec4 {
-    width: 50%;
-    height: 38px;
+    width: 100%;
+    height: 70px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 28px;
+    font-size: 300%;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.36;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #4a4b4b;
 }
 
@@ -180,7 +194,7 @@ a.rec4green {
     height: 200px;
     border-radius: 8px;
     content: "";
-    background-color: #d6d1d2;
+    background-color: #d1fcbf;
     position: absolute;
     left: 0;
     top: 0;
@@ -204,12 +218,16 @@ a.rec4green {
     color: #fff;
 }
 
-@media only screen and (max-width: 770px) {
+@media screen and (max-width: 600px) {
+    section.gambar {
+        padding-top: 15%;
+        padding-bottom: 50%;
+    }
+    
     p.welcome {
-        width: 300px;
-        height: 48px;
+        width: 100%;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 20px;
+        font-size: 225%;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
@@ -217,13 +235,15 @@ a.rec4green {
         letter-spacing: 0.7px;
         text-align: left;
         color: #ffffff;
+        padding-top: 10%;
+        margin-bottom: 20%;
+        padding-left: 5%;
     }
     
     p.sub {
+        width: 100%;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        width: 250px;
-        height: 48px;
-        font-size: 10px;
+        font-size: 125%;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
@@ -231,6 +251,79 @@ a.rec4green {
         letter-spacing: normal;
         text-align: left;
         color: #ffffff;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding-left: 5%;
     }
+
+    div.pelajari{
+        padding-left: 17%;
+    }
+
+    p.sec2 {
+        width: 100%;
+        height: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 200%;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.36;
+        letter-spacing: normal;
+        text-align: center;
+        color: #4a4b4b;
+        padding-left: 5%;
+    }
+    
+    p.sec2-desc{
+        width: 90%;
+        height: 70px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 100%;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.37;
+        letter-spacing: normal;
+        text-align: justify;
+        color: #4a4b4b;
+        margin-bottom: 10%;
+        padding-left: 8%;
+      }
+
+      div.video {
+        width: 90%;
+        margin-left: 4%;
+        margin-top: 0%;
+        text-align: center;
+      }
+    
+      p.sec3 {
+        width: 100%;
+        height: 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 200%;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.26;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+      }
+    
+      p.sec4 {
+        width: 100%;
+        height: 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 200%;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.36;
+        letter-spacing: normal;
+        text-align: center;
+        color: #4a4b4b;
+      }
 } 
 
