@@ -1,18 +1,14 @@
-.nav-container2{ -webkit-backface-visibility: hidden; max-width: 100%; }
-navbar{ background: #000000; -webkit-backface-visibility: hidden; max-width: 100%; }
-navbar ul{ margin-bottom: 0; }
-
-.rec-nav {
-    width: 452px;
-    height: 31px;
-    border-radius: 13.5px;
-    border: solid 0.5px #707070;
-    background-color: #ffffff;
-}
-
 section.gambar {
     padding-top: 15%;
     padding-bottom: 22%;
+}
+
+nav.navbar-fixed-top {
+    overflow: hidden;
+    background-color: #ffffff;
+    position: sticky; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
 }
 
 p.welcome {
@@ -143,9 +139,9 @@ h5.sec4-box {
 
 p.sec4 {
     width: 100%;
-    height: 70px;
+    height: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 300%;
+    font-size: 250%;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -154,6 +150,22 @@ p.sec4 {
     text-align: center;
     color: #4a4b4b;
 }
+
+p.sec4-desc{
+    width: 100%;
+    height: 70px;
+    font-family: 'Roboto Condensed','Raleway',"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.37;
+    letter-spacing: normal;
+    text-align:center;
+    color: #4a4b4b;
+    margin-bottom: 15%;
+    padding-left: 5%;
+  }
 
 a.rec4purple {
     width: 143px;
@@ -209,13 +221,130 @@ a.rec4green {
     width: 100%;
 }
 
-.about h3 {
+.about p {
     -webkit-transition: 0.2s color;
     transition: 0.2s color;
 }
 
-.about:hover h3 {
+.about:hover p {
     color: #fff;
+}
+
+/*------------------------------------*\
+	Portfolio
+\*------------------------------------*/
+
+.work {
+    position: relative;
+    padding: 20px;
+}
+
+.work>img {
+  width: 100%;
+}
+
+.work .overlay {
+    background: #1C1D21;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.work:hover .overlay {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    opacity: 0.8;
+}
+
+.work .work-content {
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    top: 50%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.work .work-content p {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 0;
+    font-size: 125%;
+    color: #FFF;
+    margin-bottom: 10px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.work:hover .work-content p {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+    font-size: 125%;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.work .work-content span {
+    display: block;
+    text-transform: uppercase;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 0;
+    font-size: 150%;
+    color: #0bb89e;
+    margin-bottom: 10px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.work:hover .work-content span {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.work .work-link {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
+.work .work-link a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #0bb89e;
+    color: #FFF;
+    line-height: 50px;
+    text-align: center;
+}
+
+.work:hover .work-link {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    opacity: 1;
 }
 
 @media screen and (max-width: 600px) {

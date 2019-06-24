@@ -51,7 +51,7 @@
 	</head>
 	<body>
 		<div class="nav-container image-bg">
-			<nav id="nav" class="absolute transparent bg-dark">
+			<nav id="nav" class="absolute transparent">
 				<div class="nav-bar no-line">
 					<div class="module left">
 						<a href="/">
@@ -64,7 +64,7 @@
 					</div>
 					<div class="module-group right">
 						<div class="module left">
-							<ul class="menu main-nav">
+							<ul class="menu main-nav" style="color: #000000">
 								<li>
 									<a href="#home" style="font-size: 150%">Beranda</a>
 								</li>
@@ -74,15 +74,8 @@
 								<li>
 									<a href="#fitur" style="font-size: 150%">Fitur</a>
 								</li>
-								<li class="has-dropdown">
-									<a href="#peran" style="font-size: 150%">
-										Peran Kami
-									</a>
-									<ul>
-									<li><a href="#peran" style="font-size: 150%">Growers</a></li>
-									<li><a href="#peran" style="font-size: 150%">Logistics</a></li>
-									<li><a href="#peran" style="font-size: 150%">Brokers</a></li>
-									</ul>
+								<li>
+									<a href="#peran" style="font-size: 150%">Peran Kami</a>
 								</li>
 								<li>
 									<a href="#kontak" style="font-size: 150%">Kontak Kami</a>
@@ -98,6 +91,7 @@
 					
 				</div>
 			</nav>
+			
 		</div>
 
 		<main class="py-4" >
@@ -180,77 +174,163 @@
 					<!--end of container-->
 				</section>
 
-				<section class="image-bg pt240 pb240" id="fitur">
-						<div class="background-image-holder">
-							<img alt="image" class="background-image" src="../img/asset/body.jpg"
-							style="display: none; background-size: cover; background-repeat: no-repeat;
-							background-position: center center; margin: auto;
-							min-width: 50%; min-height: 50%;"/>
+				<!-- <section class="image-bg pt240 pb240" id="fitur">
+					<div class="background-image-holder">
+						<img alt="image" class="background-image" src="../img/asset/body.jpg"
+						style="display: none; background-size: cover; background-repeat: no-repeat;
+						background-position: center center; margin: auto;
+						min-width: 50%; min-height: 50%;"/>
+					</div>
+					<div class="container">
+						<div class="row">
+							<p class="sec3">
+								Fitur yang Tersedia di
+								<strong>Agroforestcape</strong>
+							</p><br>
 						</div>
-						<div class="container">
-							<div class="row">
-								<p class="sec3">
-									Fitur yang Tersedia di
-									<strong>Agroforestcape</strong>
-								</p><br>
-							</div>
-							<!--end of row-->
-							<div class="row">
-								<div class="col-sm-4">
-									<div class="about">
-										<div class="text-center">
-											<i class="fa fa-database icon" style="color:#574693; line-height: 1.5"></i>
-											<h5 class="uppercase bold mb16" style="color:#574693;">Manajemen Stok</h5>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="about">
-										<div class="text-center">
-											<i class="fa fa-chain icon" style="color:#574693; line-height: 1.5"></i>
-											<h5 class="uppercase bold mb16" style="color:#574693;">Pelacakan Rantai Pasok</h5>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="about">
-										<div class="text-center">
-											<i class="fa fa-truck icon" style="color:#574693; line-height: 1.5"></i>
-											<h5 class="uppercase bold mb16" style="color:#574693;">Otomatisasi Logistik</h5>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="about">
-										<div class="text-center">
-											<i class="fa fa-users icon" style="color:#574693; line-height: 1.5"></i>
-											<h5 class="uppercase bold mb16" style="color:#574693;">Integrasi Pedagang Perantara</h5>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="about">
-										<div class="text-center">
-											<i class="fa fa-location-arrow icon" style="color:#574693; line-height: 1.5"></i>
-											<h5 class="uppercase bold mb16" style="color:#574693;">Traceability (Lacak-Balak)</h5>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="about">
-										<div class="text-center">
-											<i class="fa fa-line-chart icon" style="color:#574693; line-height: 1.5"></i>
-											<h5 class="uppercase bold mb16" style="color:#574693;">Distance Tracking and<br>Trip Mapping</h5>
-										</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<div class< style="padding-bottom: 0px"div class="text-center">
+										<i class="fa fa-database icon" style="color:#574693; line-height: 1.5"></i>
+										<h5 class="uppercase bold mb16" style="color:#574693;">Manajemen Stok</h5>
 									</div>
 								</div>
 							</div>
-							<!--end of row-->
+							<div class="col-sm-4">
+								<div class< style="padding-bottom: 0px"div class="text-center">
+										<i class="fa fa-chain icon" style="color:#574693; line-height: 1.5"></i>
+										<h5 class="uppercase bold mb16" style="color:#574693;">Pelacakan Rantai Pasok</h5>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class< style="padding-bottom: 0px"div class="text-center">
+										<i class="fa fa-truck icon" style="color:#574693; line-height: 1.5"></i>
+										<h5 class="uppercase bold mb16" style="color:#574693;">Otomatisasi Logistik</h5>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class< style="padding-bottom: 0px"div class="text-center">
+										<i class="fa fa-users icon" style="color:#574693; line-height: 1.5"></i>
+										<h5 class="uppercase bold mb16" style="color:#574693;">Integrasi Pedagang Perantara</h5>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class< style="padding-bottom: 0px"div class="text-center">
+										<i class="fa fa-location-arrow icon" style="color:#574693; line-height: 1.5"></i>
+										<h5 class="uppercase bold mb16" style="color:#574693;">Traceability (Lacak-Balak)</h5>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class< style="padding-bottom: 0px"div class="text-center">
+										<i class="fa fa-line-chart icon" style="color:#574693; line-height: 1.5"></i>
+										<h5 class="uppercase bold mb16" style="color:#574693;">Distance Tracking and<br>Trip Mapping</h5>
+									</div>
+								</div>
+							</div>
 						</div>
-						<!--end of container-->
-					</section>
+					</div>
+				</section> -->
 
-				<section class="pt0" id="peran">
+				<!-- Portfolio -->
+				<section class="image-bg pt240 pb240" id="fitur">
+					<div class="background-image-holder">
+						<img alt="image" class="background-image" src="../img/asset/body.jpg"
+						style="display: none; background-size: cover; background-repeat: no-repeat;
+						background-position: center center; margin: auto;
+						min-width: 50%; min-height: 50%;"/>
+					</div>
+					<div class="container">
+						<div class="row">
+							<p class="sec3">
+								Fitur yang Tersedia di
+								<strong>Agroforestcape</strong>
+							</p><br>
+						</div>
+						<!-- Work -->
+						<div class="col-md-4 col-xs-6 work">
+							<img class="img-responsive" src="../img/stok.png" alt="">
+							<div class="overlay"></div>
+							<div class="work-content">
+								<span><strong>Manajemen Stok</strong></span>
+								<p class="activity-web">Layanan yang berfungsi untuk mengelola persediaan yang ada serta melakukan 
+									pencatatan terhadap barang yang masuk dan keluar dari gudang/sistem penyimpanan.</p>
+							</div>
+						</div>
+						<!-- /Work -->
+
+						<!-- Work -->
+						<div class="col-md-4 col-xs-6 work">
+							<img class="img-responsive" src="../img/rantai.png" alt="">
+							<div class="overlay"></div>
+							<div class="work-content">
+								<span><strong>Pelacakan Rantai Pasok</strong></span>
+								<p class="activity-web">Layanan yang berfungsi untuk melakukan penelusuran rantai pasok pada setiap 
+									tahap berdasarkan pencatatan data yang dilakukan secara otomatis.</p>
+							</div>
+						</div>
+						<!-- /Work -->
+
+						<!-- Work -->
+						<div class="col-md-4 col-xs-6 work">
+							<img class="img-responsive" src="../img/logistik.png" alt="">
+							<div class="overlay"></div>
+							<div class="work-content">
+								<span><strong>Otomatisasi Logistik</strong></span>
+								<p class="activity-web">Melakukan digitalisasi terhadap sistem pencatatan yang berbasis kertas dengan 
+									bantuan basis data yang lengkap dan akurat untuk mengurangi penggunaan kertas menyimpan semua data 
+									dalam sistem yang aman dan terintegrasi.</p>
+							</div>
+						</div>
+						<!-- /Work -->
+
+
+						<!-- Work -->
+						<div class="col-md-4 col-xs-6 work">
+							<img class="img-responsive" src="../img/integrasi.png" alt="">
+							<div class="overlay"></div>
+							<div class="work-content">
+								<span><strong>Integrasi Pedagang Perantara</strong></span>
+								<p class="activity-web">Membuat hubungan langsung antara petani 
+									dengan pedagang perantara untuk memungkinkan pengawasan dan 
+									pengelolaan stok dalam kerangka rantai pasok yang ada.</p>
+							</div>
+						</div>
+						<!-- /Work -->
+
+						<!-- Work -->
+						<div class="col-md-4 col-xs-6 work">
+							<img class="img-responsive" src="../img/lacak.png" alt="">
+							<div class="overlay"></div>
+							<div class="work-content">
+								<span><strong>Traceability (Lacak-Balak)</strong></span>
+								<p class="activity-web">Layanan yang berfungsi untuk memahami 
+									dari mana barang yang diproduksi berasal dan akan ditujukan 
+									kemana dengan indikator waktu pada setiap tahap rantai pasok.</p>
+							</div>
+						</div>
+						<!-- /Work -->
+
+						<!-- Work -->
+						<div class="col-md-4 col-xs-6 work">
+							<img class="img-responsive" src="../img/tracking.png" alt="">
+							<div class="overlay"></div>
+							<div class="work-content">
+								<span style="font-size: 125%!important"><strong>Distance Tracking and Trip Mapping</strong></span>
+								<p class="activity-web" style="font-size: 110%!important">Layanan yang berfungsi untuk mengetahui 
+									posisi pergerakan barang yang sedang diangkut, memprediksi 
+									kerugian yang mungkin terjadi dan membantu dalam pengambilan 
+									keputusan kontrak yang tepat, menggunakan laporan posisi barang secara langsung dan akurat.</p>
+							</div>
+						</div>
+						<!-- /Work -->
+					</div>
+				</section>
+
+				<section class="pt0 pb0" id="peran">
 					<div class="container">
 						<div class="row">
 							<p class="sec4">Siapa saja yang <strong>berperan?</strong></p>
@@ -258,31 +338,87 @@
 						<!--end of row-->
 						<div class="row">
 							<div class="col-sm-4">
-								<div class="feature feature-1">
+								<div class="" style="padding-bottom: 0px">
 									<div class="text-center">
-										<img alt="image" class="img-responsive pb-xs-20" src="../img/asset/grower2.png"><br>
-										<a class="btn btn-lg btn-rounded" href="#">Growers</a>
+										<img alt="image" class="img-responsive pb-xs-20"
+										style="width: 80%; height: 80%; margin-left: 8%;" src="../img/asset/grower2.png"><br>
+										<!-- <a class="btn btn-lg btn-rounded" href="#">Growers</a> -->
 									</div>
 								</div>
 							</div>
 							<div class="col-sm-4">
-								<div class="feature feature-1">
+								<div class="" style="padding-bottom: 0px">
 									<div class="text-center">
-										<img alt="image" class="img-responsive pb-xs-20" src="../img/asset/logistic2.png"><br>
-										<a class="btn btn-lg btn-rounded" href="#">Logistics</a>
+										<img alt="image" class="img-responsive pb-xs-20"
+										style="width: 80%; height: 80%; margin-left: 8%;" src="../img/asset/logistic2.png"><br>
+										<!-- <a class="btn btn-lg btn-rounded" href="#">Logistics</a> -->
 									</div>
 								</div>
 							</div>
 							<div class="col-sm-4">
-								<div class="feature feature-1">
+								<div class="" style="padding-bottom: 0px">
 									<div class="text-center">
-										<img alt="image" class="img-responsive pb-xs-20" src="../img/asset/broker2.png"><br>
-										<a class="btn btn-lg btn-rounded" href="#">Brokers</a>
+										<img alt="image" class="img-responsive pb-xs-20"
+										style="width: 80%; height: 80%; margin-left: 8%;" src="../img/asset/broker2.png"><br>
+										<!-- <a class="btn btn-lg btn-rounded" href="#">Brokers</a> -->
 									</div>
 								</div>
 							</div>
 						</div>
 						<!--end of row-->
+						<div class="text-center">
+							<div class="tabbed-content button-tabs">
+								<ul class="tabs" style="margin-bottom: 0px">
+									<li class="active">
+										<div class="tab-title">
+											<span>Growers</span>
+										</div>
+										<div class="tab-content">
+											<p class="sec4-desc">
+												Teknologi blockchain dapat menyasar dari petani kecil dengan hanya satu lahan 
+												sampai dengan perusahaan besar yang memiliki banyak lahan, transaksi perdagangan 
+												yang otomatis dan berbasis real-time data, kegiatan usaha dapat berjalan lebih cepat, 
+												hemat dan tepat, serta kelompok tani akan mendapatkan pelaporan secara berkala 
+												tentang kondisi lahan agroforestri melalui aplikasi. Selain itu, kelompok tani 
+												juga akan menerima pemberitahuan langsung untuk pengangkutan hasil pemanenan 
+												dan dapat menghubungi pemangku kepentingan lainnya melalui sistem untuk 
+												mengatur stok dan pemasaran.
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="tab-title">
+											<span>Logistics</span>
+										</div>
+										<div class="tab-content">
+											<p class="sec4-desc">
+												Pedagang perantara tidak akan kehilangan pekerjaan (dihapuskan) dengan hadirnya 
+												teknologi blockchain karena pelaku ini juga memiliki peran penting dalam rantai 
+												pasok usaha agroforestri. Pedagang perantara akan mendapat kemudahan berupa 
+												pemberitahuan langsung dari jejaring pemasaran, mempererat hubungan dengan 
+												pelanggan, dan dapat memperbaharui kontrak secara otomatis dengan Gapoktan.
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="tab-title">
+											<span>Brokers</span>
+										</div>
+										<div class="tab-content">
+											<p class="sec4-desc">
+												Pihak logistik dapat melakukan pencatatan tugas rantai pasok secara otomatis, 
+												melakukan pengangkutan barang dimana saja melalui aplikasi, fasilitas kamera 
+												untuk bukti pengangkutan, trip mapping dan distance tracking untuk pemantauan 
+												perjalanan angkutan tanpa menggunakan GPS (Global Positioning System), dan 
+												menerima pemberitahuan langsung terkait kontrak pengangkutan dengan Gapoktan 
+												dan pedagang perantara.
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!--end of button tabs-->
+						</div>
 					</div>
 					<!--end of container-->
 				</section>
@@ -343,14 +479,7 @@
 		<div class="container"><br>
 			<div class="row foot_links">
 				<div class="col-lg-3">
-					<img src="../img/asset/logoweb.png" style="width: 200px; height: 40px;"><br><br>
-					<p class="bold">Temukan kami di:</p>
-					<img src="../img/asset/twitter.png" style="width: 40px; height: 40px;">
-					<img src="../img/asset/facebook.png" style="width: 40px; height: 40px;">
-					<img src="../img/asset/linkedin.png" style="width: 40px; height: 40px;">
-					<img src="../img/asset/youtube.png" style="width: 40px; height: 40px;">
-					<br><br><p>&copy; Copyright 2019 Agroforestcape</p>
-				
+						<img src="../img/asset/logoweb.png" style="width: 200px; height: 40px;">
 				</div>
 				<div class="col-lg-3">
 					<h5 class="uppercase bold">Navigasi Website</h5>
@@ -362,6 +491,14 @@
 				<div class="col-lg-3 social">
 					<h5 class="uppercase bold">Kontak Kami</h5>
 					<p><img src="../img/asset/gmail.png" style="width: 25px; height: 16px;">  agroforestcape.id@gmail.com</a></p>
+				</div>
+				<div class="col-lg-3">
+					<p class="bold">Temukan kami di:</p>
+					<img src="../img/asset/twitter.png" style="width: 40px; height: 40px;">
+					<img src="../img/asset/facebook.png" style="width: 40px; height: 40px;">
+					<img src="../img/asset/linkedin.png" style="width: 40px; height: 40px;">
+					<img src="../img/asset/youtube.png" style="width: 40px; height: 40px;">
+					<br><br><p>&copy; Copyright 2019 Agroforestcape</p>
 				</div>
 			</div>
 		</div>
