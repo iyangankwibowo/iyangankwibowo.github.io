@@ -305,7 +305,7 @@ a.rec4green {
     -ms-transform: translateY(100%);
     transform: translateY(100%);
     opacity: 0;
-    font-size: 150%;
+    font-size: 125%;
     color: #0bb89e;
     margin-bottom: 10px;
     -webkit-transition: 0.2s all;
@@ -345,7 +345,7 @@ a.rec4green {
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
     opacity: 1;
-}
+}  
 
 @media screen and (max-width: 600px) {
     section.gambar {
@@ -454,5 +454,13 @@ a.rec4green {
         text-align: center;
         color: #4a4b4b;
       }
-} 
 
+        .work .work-content span{
+            font-size: 50%;
+        }
+        
+        .activity-mobile{
+            display: block;
+            font-size: 10%;
+        }
+} 
