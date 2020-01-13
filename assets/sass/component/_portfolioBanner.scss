@@ -1,0 +1,65 @@
+.banner-portfolio {
+	min-height: 905px;
+	@include background-content();
+	align-items: unset;
+	> .container {
+		> .row {
+			height: 100%;
+		}
+	}
+    .agency-banner-content {
+		position: relative;
+        .banner-sub-title {
+            font-size: rem(22px);
+            letter-spacing: 0.2rem;
+            font-family: $bodyFont;
+            margin-bottom: 15px;
+        }
+        .banner-title {
+            font-family: 'signatra_demoregular';
+            font-weight: 400;
+            color: #333333;
+            font-size: rem(102px);
+            line-height: 1;
+            margin-bottom: 0;
+        }
+        .banner-desc {
+            color: $color-black;
+            font-size: rem(16px);
+			font-weight: 700;
+			margin-bottom: 30px;
+        }
+        .separete-border {
+			display: inline-block;
+			height: 5px;
+			width: 50px;
+			background-color: $color-black;
+		}
+		.banner-paint {
+			mix-blend-mode: luminosity;
+			opacity: .1;
+			position: absolute;
+			left: -165px;
+			top: -40px;
+		}
+	}
+	.agency-banner-img {
+		text-align: right;
+		position: relative;
+		> img {
+			width: 100%;
+		}
+		.banner-paint {
+			position: absolute;
+			left: -230px;
+			top: 456px;
+			mix-blend-mode: color-burn;
+		}
+    }
+    .social-sidebar {
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

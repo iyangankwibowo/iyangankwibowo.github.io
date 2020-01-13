@@ -1,0 +1,55 @@
+.office-location-section {
+    @include background-content($size: 100%);
+    padding: 280px 0;
+}
+
+.office-banner-content-outer {
+    background-color: rgba($color: $color-primary, $alpha: .9);
+    padding: 73px 60px;
+    .office-banner-title {
+        color: $color-white;
+        font-size: rem(48px);
+        font-family: $bodyFont;
+        margin-bottom: 30px;
+    }
+    .btn {
+        font-size: rem(18px);
+        font-weight: 400;
+        @include height-lineheight(60px);
+        padding: 0 36px;
+    }
+    .office-banner-content-inner {
+        padding-right: 80px;
+    }
+}
+
+.office-locations-list {
+    margin-top: 138px;
+    margin-left: -160px;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.15);
+    background-color: rgba($color: $color-white, $alpha: .9);
+    padding: 80px 60px;
+    .agency-section-title {
+        &.style6 {
+            margin-bottom: 14px;
+            .main-title {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .xs-list {
+        > li {
+            > a {
+                font-size: rem(18px);
+            }
+        }
+        &.round {
+            > li {
+                &::before {
+                    background-color: #c4d2fe;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.deserve-it-area {
+    padding: {
+        top: 70px;
+        bottom: 130px;
+    };
+}
+
+.deserve-summary-content {
+    color: $color-white;
+    z-index: 3;
+    position: relative;
+    .section-title {
+        color: $color-white;
+        font-size: rem(42px);
+        margin-bottom: 22px;
+    }
+    p {
+        margin-bottom: 28px;
+    }
+}
+
+.have-any-project-section {
+    &.delighter {
+        .background-wave-shape {
+            transform: translateY(50%);
+            opacity: 0;
+            transition: transform .4s ease, opacity .5s ease;
+        }
+        .pillow-image {
+            transform: translateX(50%);
+            opacity: 0;
+            transition: transform .6s ease, opacity .7s ease;
+        }
+        &.started {
+            overflow: visible;
+            .background-wave-shape {
+                transform: translateY(0%);
+                opacity: .03;
+            }
+            .pillow-image {
+                transform: translateX(0%);
+                opacity: 1;
+            }   
+        }
+    }
+}

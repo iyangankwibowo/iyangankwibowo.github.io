@@ -1,0 +1,31 @@
+.portfolio-about {
+	position: relative;
+	z-index: 1;
+    .shuffle-letter-title-wraper {
+		top: -11px;
+		left: -20px;
+		transform: none;
+		z-index: -1;
+        .shuufle-letter-title {
+            font-size: rem(90px);
+            color: #f3f3f3;
+        }
+	}
+	.subtitle {
+		font-size: rem(16px);
+		color: rgba($color: $color-black, $alpha: .5);
+		letter-spacing: .2rem;
+	}
+	.title {
+		font-size: rem(36px);
+		margin-bottom: 0px;
+	}
+}
+
+.portfolio-text {
+	> p {
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+}

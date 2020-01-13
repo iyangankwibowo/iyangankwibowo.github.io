@@ -1,0 +1,25 @@
+.post-meta-list {
+    > span {
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+        i {
+            color: $color-primary;
+            padding-right: 5px;
+        }
+        > a {
+            color: #777777;
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+    .post-author {
+        img {
+            @include equal-size(40px);
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+    }
+}

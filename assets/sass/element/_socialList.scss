@@ -1,0 +1,332 @@
+.social-list {
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0px;
+        }
+        a {
+            display: block;
+            @include equal-size-lineHeight(42px);
+            border-radius: 100%;
+            border: 1px solid #6b7499;
+            text-align: center;
+            font-size: rem(14px);
+            color: #333333;
+            &.facebook {
+                color: $color-facebook;
+                &:hover {
+                    background-color: $color-facebook;
+                    border-color: $color-facebook;
+                }
+            }
+            &.twitter {
+                color: $color-twitter;
+                &:hover {
+                    background-color: $color-twitter;
+                    border-color: $color-twitter;
+                }
+            }
+            &.linkedin {
+                color: $color-linkedin;
+                &:hover {
+                    background-color: $color-linkedin;
+                    border-color: $color-linkedin;
+                }
+            }
+            &.instagram {
+                color: $color-instagram;
+                &:hover {
+                    background-color: $color-instagram;
+                    border-color: $color-instagram;
+                }
+            }
+            &.googlePlus {
+                color: $color-google-plus;
+                &:hover {
+                    background-color: $color-google-plus;
+                    border-color: $color-google-plus;
+                }
+            }
+            &.vimeo {
+                color: #1ab7ea;
+                &:hover {
+                    background-color: #1ab7ea;
+                    border-color: #1ab7ea;
+                }
+            }
+            &.pinterest {
+                color: #bd081c;
+                &:hover {
+                    background-color: #bd081c;
+                    border-color: #bd081c;
+                }
+            }
+            &:hover {
+                color: $color-white;
+            }
+        }
+    }
+    &.version-2 {
+        li {
+            a {
+                color: $color-white;
+                font-size: rem(11.93px);
+                @include equal-size-lineHeight(35px);
+                border: 0px;
+                border: 1px solid transparent;
+                &.facebook {
+                    background-color: $color-facebook;
+                    &:hover {
+                        color: $color-facebook;
+                        border-color: currentColor;
+                    }
+                }
+                &.twitter {
+                    background-color: $color-twitter;
+                    &:hover {
+                        color: $color-twitter;
+                        border-color: currentColor;
+                    }
+                }
+                &.linkedin {
+                    background-color: $color-linkedin;
+                    &:hover {
+                        color: $color-linkedin;
+                        border-color: currentColor;
+                    }
+                }
+                &.instagram {
+                    background-color: $color-instagram;
+                    &:hover {
+                        color: $color-instagram;
+                        border-color: currentColor;
+                    }
+                }
+                &.googlePlus {
+                    background-color: $color-google-plus;
+                    &:hover {
+                        color: $color-google-plus;
+                        border-color: currentColor;
+                    }
+                }
+                &.vimeo {
+                    background-color: #1ab7ea;
+                    &:hover {
+                        color: #1ab7ea;
+                        border-color: currentColor;
+                    }
+                }
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    &.version-3 {
+        li {
+            a {
+                height: 37px;
+                line-height: 37px;
+                width: 100%;
+                border-radius: 18.5px;
+                text-align: left;
+                padding: 0 23px;
+                font-size: rem(15px);
+                color: $color-white !important;
+                border: 0px;
+                i {
+                    padding-right: 10px;
+                }
+                &.facebook {
+                    background-color: $color-facebook;
+                    &:hover {
+                        background-color: darken($color: $color-facebook, $amount: 15);
+                    }
+                }
+                &.twitter {
+                    background-color: $color-twitter;
+                    &:hover {
+                        background-color: darken($color: $color-twitter, $amount: 15);
+                    }
+                }
+                &.linkedin {
+                    background-color: $color-linkedin;
+                    &:hover {
+                        background-color: darken($color: $color-linkedin, $amount: 15);
+                    }
+                }
+                &.googlePlus {
+                    background-color: $color-google-plus;
+                    &:hover {
+                        background-color: darken($color: $color-google-plus, $amount: 15);
+                    }
+                }
+            }
+        }
+    }
+    &.social-block {
+        li {
+            display: block;
+            margin-right: 0px;
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    &.version-4 {
+        li {
+            a {
+                background-color: $color-white;
+                box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.07);
+                @include equal-size-lineHeight(30px);
+                border: 1px solid transparent;
+                font-size: rem(13px);
+            }
+        }
+    }
+    &.version-5 {
+        li {
+            a {
+                @include equal-size-lineHeight(30px);
+                border: 1px solid transparent;
+                font-size: rem(12px);
+                background-color: $color-white;
+                &:hover {
+                    background-color: darken($color: $color-white, $amount: 10);
+                }
+                > i {
+                    background: linear-gradient(119deg, #b224ef 19%, #5055fa 84%);
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    color: #b224ef;
+                }
+            }
+        }
+    }
+    &.square {
+        > li {
+            > a {
+                border-radius: 0%;
+            }
+        }
+    }
+}
+  
+.simple-social-list {
+    $amount: 15;
+    li {
+        display: inline-block;
+        margin-right: 32px;
+        &:last-child {
+            margin-right: 0px;
+        }
+        a {
+            color: $color-white;
+            display: block;
+            font-size: rem(18px);
+            &.facebook {
+                color: #3e5c9a;
+                &:hover {
+                    color: darken($color: #3e5c9a, $amount: $amount);
+                }
+            }
+            &.twitter {
+                color: #1da1f2;
+                &:hover {
+                    color: darken($color: #1da1f2, $amount: $amount);
+                }
+            }
+            &.googlePlus {
+                color: #fb2f14;
+                &:hover {
+                    color: darken($color: #fb2f14, $amount: $amount);
+                }
+            }
+            &.linkedin {
+                color: #0077b5;
+                &:hover {
+                    color: darken($color: #0077b5, $amount: $amount);
+                }
+            }
+            &.instagram {
+                color: $color-instagram;
+                &:hover {
+                    color: darken($color: $color-instagram, $amount: $amount);
+                }
+            }
+            &.behance {
+                color: #1769ff;
+                &:hover {
+                    color: darken($color: #1769ff, $amount: $amount);
+                }
+            }
+            &.dribbble {
+                color: #ea4c89;
+                &:hover {
+                    color: darken($color: #ea4c89, $amount: $amount);
+                }
+            }
+        }
+    }
+    &.version-2 {
+        > li {
+            &:not(:last-child) {
+                margin-right: 0px;
+            }
+            vertical-align: middle;
+            .title {
+                color: $color-ternary;
+                font-size: rem(28px);
+                font-weight: 900;
+                font-family: $bodyFont;
+                display: inline-block;
+                padding-right: 30px;
+            }
+            > a {
+                @include equal-size-lineHeight(50px);
+                border-radius: 50%;
+                font-size: rem(18px);
+                color: $color-black;
+                border-radius: 50%;
+                text-align: center;
+                &:hover {
+                    box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.1);
+                    background-color: $color-white;
+                }
+            }
+        }
+    }
+    &.vertical {
+        > li {
+            display: block;
+            margin-right: 0px;
+            &:not(:last-child) {
+                margin-bottom: 18px;
+            }
+            > a {
+                color: $color-black;
+                position: relative;
+                &::after {
+                    content: "";
+                    background-color: rgba($color: $color-black, $alpha: .2);
+                    height: 3px;
+                    width: 10px;
+                    display: inline-block;
+                    transform-origin: 0% 50%;
+                    transform: scaleX(0);
+                    transition: transform 300ms ease;
+                    position: relative;
+                    top: -5px;
+                    right: -7px;
+                }
+                &:hover {
+                    &::after {
+                        transform: scaleX(1);
+                        transform-origin: 100% 100%;
+                    }
+                }
+            }
+        }
+    }
+}

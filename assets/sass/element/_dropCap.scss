@@ -1,0 +1,9 @@
+.drop-caps {
+    &::first-letter {
+        font-size: rem(48px);
+        line-height: 30px;
+        color: $color-black;
+        float: left;
+        padding-right: 8px;
+    }
+}

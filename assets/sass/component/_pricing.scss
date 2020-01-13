@@ -1,0 +1,61 @@
+.pricing-table {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.08);
+    padding: {
+        top: 60px;
+        bottom: 40px;
+    }
+    &:hover {
+        .btn {
+            background-color: #1bd1ea;
+            border-color: #1bd1ea;
+            color: $color-white;
+        }
+    }
+}
+
+.pricing-header {
+    margin-bottom: 50px;
+    .xs-svg {
+        svg {
+            width: 133px;
+            height: 100px;
+        }
+    }
+    h3 {
+        // color: #000000;
+        font-size: rem(18px);
+        // font-family: $titleFont;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+    .pricing-price {
+        h2 {
+            color: #000000;
+            font-size: rem(48px);
+            font-family: $bodyFont;
+            margin-bottom: 2px;
+        }
+        span {
+            font-size: rem(13px);
+            letter-spacing: 3px;
+        }
+    }
+}
+.pricing-body {
+    margin-bottom: 50px;
+}
+.pricing-footer {
+    .btn {
+        padding: 0 71px;
+    }
+}
+.pricing-list {
+    li {
+        font-size: rem(15px);
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.agency_contactus_block {
+    padding: 140px 0;
+    @include background-content();
+    position: relative;
+    overflow: hidden;
+    .doodle-parallax {
+        .single-doodle {
+            position: absolute;
+            &.one {
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+.contact_us_element {
+    h3 {
+        font-size: rem(16px);
+        font-weight: 400;
+        margin-bottom: 3px;
+    }
+    h4 {
+        font-size: rem(48px);
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,14 @@
+.scrollto-button-wraper {
+    .scrollto-button {
+        @include equal-size-lineHeight(60px);
+        background-color: $color-white;
+        text-align: center;
+        color: $color-black;
+        font-size: rem(18px);
+        display: block;
+        box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.1);
+    }
+    .round-btn {
+        border-radius: 50%;
+    }
+}

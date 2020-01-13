@@ -1,0 +1,46 @@
+.get-benifits-img {
+    margin-right: 50px;
+    margin-left: -100px;
+}
+.get-benifits-summary {
+    padding-top: 40px;
+    .get-benifit-title {
+        font-size: rem(42px);
+        font-family: $bodyFont;
+        margin-bottom: 19px;
+        span {
+            font-family: inherit;
+            color: #738ee4;
+        }
+    }
+    > p {
+        color: $color-black;
+        margin-bottom: 15px;
+        span {
+            color: #738ee4;
+        }
+    }
+    .xs-list {
+        margin-bottom: 30px;
+        > li {
+            &:not(:last-child) {
+                margin-bottom: 3px;
+            }
+            &::before {
+                color: #ff5382;
+            }
+        }
+    }
+    .btn {
+        height: 60px;
+        line-height: 60px;
+        padding: 0 38px;
+        border-radius: 30px;
+        &.icon-right,
+        &.icon-left {
+            > i {
+                line-height: 60px;
+            }
+        }
+    }
+}

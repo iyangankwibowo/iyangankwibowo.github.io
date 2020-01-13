@@ -1,0 +1,56 @@
+$trackColor: (1, #36a2eb),
+            (2, #ffce56),
+            (3, #4bc0c0),
+            (4, #ff6384);
+$skill: skill;
+
+.single-skill-bar {
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+    @each $name,
+    $color in $trackColor {
+        &.color-#{$name} {
+            .#{$skill}-bar {
+                .#{$skill}-track {
+                    background-color: $color;
+                }
+            }
+        }
+    }
+}
+
+.#{$skill}-bar {
+    height: 3px;
+    background-color: #e7e7e7;
+    .#{$skill}-track {
+        width: 0%;
+        background-color: #333333;
+        display: block;
+        height: 100%;
+        overflow: visible !important;
+        position: relative;
+        .number-percentage-wraper {
+            position: absolute;
+            right: 0;
+            top: -33px;
+            z-index: 1;
+        }
+    }
+}
+
+.#{$skill}-bar-content {
+    margin-bottom: 7px;
+    .#{$skill}-title,
+    .number-percentage-wraper {
+        font-weight: 700;
+        color: #737373;
+    }
+    .number-percentage-wraper {
+        float: right;
+    }
+}
+
+.number-percentage-wraper {
+    color: $color-black;
+}

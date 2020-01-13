@@ -1,0 +1,76 @@
+.xs-icon-menu {
+    border-radius: 0px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 30px 0px rgba(23, 104, 221, 0.2);
+    border-top: 0px solid #000;
+    .single-menu-item {
+        a {
+            padding: {
+                left: 20px;
+                right: 30px;
+            };
+            &:hover {
+                color: $color-primary;
+            }
+            display: block;
+            color: #141414;
+            font-size: rem(15px);
+            i {
+                font-size: rem(15px);
+                position: relative;
+                top: 1px;
+                padding-right: 18px;
+            }
+        }
+        &:not(:last-child) {
+            a {
+                padding-bottom: 12px;
+                border-bottom: 1px solid #f7f7f7;
+            }
+        }
+        &:not(:first-child) {
+            a {
+                padding-top: 12px;
+            }
+        }
+        &.active {
+            > a {
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+// .home-menu-panel {
+//     background-color: $color-white;
+// }
+
+.xs-hidden-menus {
+    .xs-icon-menu, .home-menu-panel {
+        box-shadow: none;
+    }
+}
+
+.megamenu-panel {
+    padding: 35px 20px;
+    &.home-menu-panel {
+        padding: 20px;
+    }
+    box-shadow: 0px 10px 30px 0px rgba(23, 104, 221, 0.2);
+    .xs-icon-menu {
+        box-shadow: none;
+        background-color: inherit;
+        .single-menu-item {
+            &:not(:first-child) {
+                a {
+                    padding-top: 20px;
+                }
+            }
+            &:not(:last-child) {
+                a {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}

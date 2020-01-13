@@ -1,0 +1,93 @@
+.client-says-area {
+    position: relative;
+    z-index: 1;
+    background-color: #7447ff;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/client-slider-bg.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: .1;
+    }
+    > .container {
+        position: relative;
+    }
+}
+
+.vertical-slider {
+    height: 450px;
+    .swiper-slide {
+        overflow: hidden;
+        padding: 0 30px;
+    }
+}
+
+.client-comments {
+    padding: {
+        top: 99px;
+        bottom: 99px;
+        right: 40px;
+    }
+    .client-massage {
+        margin-bottom: 55px;
+        > p {
+            font-size: rem(16px);
+            color: $color-white;
+            margin-bottom: 0px;
+        }
+    }
+}
+.client-info {
+    .client-avatar {
+        position: relative;
+        @include equal-size(120px);
+        float: left;
+        > img {
+            border-radius: 50%;
+        }
+        .client-sign {
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            @include equal-size-lineHeight(80px, $Lheight: 60px);
+            background-color: $color-white;
+            border-radius: 50%;
+            border: 10px solid #7447ff;
+            text-align: center;
+        }
+    }
+    .client-bio {
+        overflow: hidden;
+        position: relative;
+        top: 30px;
+        padding-left: 30px;
+        .client-name {
+            color: $color-white;
+            font-size: rem(22px);
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+        .designation {
+            font-size: rem(13px);
+            color: #c2b3ff;
+        }
+    }
+}
+
+.client-title-wraper {
+    padding-top: 90px;
+    .client-title {
+        font-family: $bodyFont;
+        color: $color-white;
+        font-size: rem(48px);
+        font-weight: 700;
+    }
+    .content-separete-border {
+        background-color: $color-white;
+    }
+}

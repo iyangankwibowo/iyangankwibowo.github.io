@@ -1,0 +1,22 @@
+.agency-parallax-area {
+    position: relative;
+    .watermark-title {
+        top: 210px;
+    }
+    .parallax-slide {
+        background-repeat: no-repeat;
+        // background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        height: 772px;
+    }
+}
+.parallax-container-content {
+    padding-top: 180px;
+    img {
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 35px;
+    }
+}

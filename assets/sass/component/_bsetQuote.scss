@@ -1,0 +1,49 @@
+.best-quote-area {
+    background-color: #fd4a7b;
+    position: relative;
+    .quote-img {
+        position: absolute;
+        top: -29px;
+        left: 0;
+    }
+}
+
+.best-quote-content {
+    .best-quote-title {
+        color: $color-white;
+        font-family: $bodyFont;
+        margin-bottom: 30px;
+    }
+    p {
+        color: $color-white;
+    }
+}
+.dash-title {
+    font-size: rem(18px);
+    font-weight: 500;
+    &::before {
+        content: "";
+        height: 2px;
+        width: 70px;
+        background-color: rgba($color: $color-white, $alpha: .4);
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 11px;
+    }
+}
+
+.quote-slider {
+    .owl-nav {
+        line-height: 1;
+        button {
+            &.owl-next,
+            &.owl-prev {
+                color: $color-white;
+                font-size: rem(20px);
+            }
+            &.owl-prev {
+                margin-right: 15px;
+            }
+        }
+    }
+}

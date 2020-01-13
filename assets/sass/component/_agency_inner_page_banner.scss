@@ -1,0 +1,43 @@
+.xs-inner-banner {
+    min-height: 531px;
+    @include flex-position(flex, center, center);
+    position: relative;
+    @include background-content();
+    &::before ,
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+    &::before {
+        left: 0;
+        background: rgb(3,105,209);
+        background: linear-gradient(121deg, rgba(3,105,209,1) 0%, rgba(3,105,209,1) 25%, rgba(0,236,188,1) 60%);
+        opacity: .85;
+    }
+    &::after {
+        right: 0;
+        background-image: url(../images/banner/inner-banner-overlay.png);
+        @include background-content($size: contain, $position: right top);
+    }
+    .inner-banner {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        color: $color-white;
+        .inner-banner-title {
+            font-size: rem(60px);
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: $color-white;
+        }
+        p {
+            margin-bottom: 0px;
+        }
+    }
+    &.inner-banner2 {
+        min-height: 452px;
+    }
+}

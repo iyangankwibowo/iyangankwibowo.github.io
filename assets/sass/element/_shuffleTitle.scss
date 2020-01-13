@@ -1,0 +1,22 @@
+.shuffle-title {
+    position: relative;
+}
+.shuffle-letter-title-wraper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.shuufle-letter-title {
+    font-size: rem(185px);
+    margin-bottom: 0;
+    color: #f8f8f8;
+}
+.gray-bg {
+    .shuufle-letter-title {
+        color: #f0f0f0;
+    }
+}

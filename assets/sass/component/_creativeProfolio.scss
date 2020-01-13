@@ -1,0 +1,107 @@
+.header-transparent,
+.sticky-header {
+    + .creative-portfolio-section {
+        margin-top: 111px;
+    }
+}
+
+.creative-portfolio-section {
+    padding: 140px 0;
+}
+
+.portfolio-grid {
+    margin: {
+        left: -15px;
+        right: -15px;
+    }
+}
+.portfolio-gallery {
+    display: block;
+    position: relative;
+    margin: 15px;
+    overflow: hidden;
+    &:hover {
+        .entry_caption {
+            .title , .cat {
+                opacity: 1;
+                visibility: visible;
+                top: 0px;
+            }
+        }
+        .entry__overlay {
+            opacity: 1;
+        }
+        > img {
+            transform: scale(1.05);
+        }
+    }
+    > img {
+        width: 100%;
+        @include transition;
+    }
+    .entry__overlay {
+        $position: 20px;
+        position: absolute;
+        top: $position;
+        left: $position;
+        right: $position;
+        bottom: $position;
+        background-color: rgba($color: $color-white, $alpha: .8);
+        z-index: 5;
+        opacity: 0;
+        @include transition;
+    }
+    .entry_caption {
+        padding: 30px;
+        .title, .cat {
+            font-size: rem(20px);
+            font-family: $bodyFont;
+            font-weight: 400;
+            position: relative;
+            margin-bottom: 0px;
+            top: -20px;
+            opacity: 0;
+            visibility: hidden;
+            @include transition;
+        }
+        .cat {
+            font-size: rem(14px);
+            top: 20px;
+        }
+    }
+    .line {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        height: 2px;
+        width: 20px;
+        background-color: $color-black;
+    }
+}
+
+
+.hidden {
+    display: none;
+}
+.loadmore-btn {
+    color: $color-primary;
+    font-size: rem(22px);
+    letter-spacing: .3px;
+    > i {
+        padding-right: 15px;
+        font-size: rem(18px);
+        @include transition;
+    }
+    &:hover {
+        color: $color-secondary;
+        > i {
+            padding-right: 10px;
+        }
+    }
+}
+
+.portfolio-grid-item {
+    &.portfolio-grid-item-w2 {
+        max-width: 100%;
+    }
+}

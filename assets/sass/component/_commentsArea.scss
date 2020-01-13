@@ -1,0 +1,67 @@
+.xs-comments-area {
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #e7e7e7;
+    .comments-title {
+        margin-bottom: 45px;
+    }
+    .comment-body {
+        &:before {
+            display: table;
+            content: "";
+            clear: both;
+        }
+        img {
+            @include equal-size(80px);
+            border-radius: 100%;
+            float: left;
+        }
+    }
+    .meta-data {
+        margin-left: 100px;
+    }
+    .reply {
+        float: right;
+        .comment-reply-link {
+            color: #626c84;
+            font-size: rem(15px);
+            i {
+                color: #252a37;
+                font-size: rem(16px);
+                padding-right: 10px;
+            }
+        }
+    }
+    .comment-author {
+        a {
+            font-weight: 500;
+            &::after {
+                content: "/";
+                padding: 0 5px;
+                color: $bColor;
+            }
+        }
+    }
+    .comment-date {
+        color: $bColor;
+        margin-bottom: 0px;
+        font-weight: 500;
+        display: inline-block;
+    }
+    .comment-content {
+        margin-top: 10px;
+        padding-right: 50px;
+        p {
+            margin-bottom: 0px;
+        }
+    }
+    .comment:not(:last-child ) {
+        .children {
+            margin-left: 70px;
+        }
+    }
+}
+
+.xs-comments-area .comment:not(:last-child) .meta-data {
+    margin-bottom: 50px;
+}

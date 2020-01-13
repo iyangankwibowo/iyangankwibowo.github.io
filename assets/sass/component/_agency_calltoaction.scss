@@ -1,0 +1,74 @@
+.agency_callto_action {
+    background-color: #00a39a;
+    @include background-content($position: right center);
+    color: $color-white;
+    .section-title {
+        color: $color-white;
+    }
+}
+.call-to-action-content {
+    .section-title {
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    p {
+        margin-bottom: 40px;
+    }
+}
+
+/* agency call to action 2 */
+.agency_callto_action2 {
+    .agency-section-title {
+        .main-title {
+            margin-bottom: 20px;
+        }
+        p {
+            padding: 0 150px;
+            margin-bottom: 37px;
+        }
+        &.text-center {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+/* call to action version 3 */
+.calltoaction-section-3 {
+    position: relative;
+    background-color: #000a7a;
+    padding: 120px 0;
+    overflow: hidden;
+    > .container {
+        position: relative;
+        z-index: 2;
+    }
+}
+.call-to-action-content-3 {
+    .call-to-action-title {
+        color: $color-white;
+        font-size: rem(48px);
+        font-weight: 900;
+        font-family: $bodyFont;
+        letter-spacing: -.2px;
+        margin-bottom: 35px;
+    }
+    .btn {
+        @include height-lineheight(70px);
+        font-weight: 400;
+        &.icon-right,
+        &.icon-left {
+            > i {
+                line-height: 70px;
+            }
+        }
+    }
+}
+
+.cal_to_action_animation_wraper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}

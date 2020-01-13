@@ -1,0 +1,227 @@
+.btn:not([class*=btn-outline-]) {
+    border: 0px;
+    color: #FFFFFF;
+    background-color: #000000;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.08);
+}
+
+$height: 54px;
+.btn {
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: .5px;
+    border-radius: 1.71875rem;
+    padding: 0 50px;
+    height: $height;
+    line-height: $height;
+    @include transition;
+    white-space: normal;
+    &.btn-secondary {
+        background-color: #4285f4;
+        box-shadow: none;
+        font-weight: 400;
+        padding: 0 65px;
+        i {
+            padding-left: 11px;
+        }
+        &:hover {
+            background-color: darken($color: #4285f4, $amount: 13);
+        }
+    }
+    &.btn-outline-primary {
+        border-color: #e8e9eb;
+        color: #1bd1ea;
+        i {
+            padding-left: 5px;
+            position: relative;
+            top: 2px;
+        }
+    }
+    &.btn-primary {
+        background-color: #1bd1ea;
+        &:hover {
+            background-color: darken($color: #1bd1ea, $amount: 13);
+        }
+    }
+    &.style2 {
+        background-color: #22c8e5;
+        &:hover {
+            background-color: darken($color: #22c8e5, $amount: 13);
+        }
+        >i {
+            font-size: rem(18px);
+        }
+    }
+    &.icon-right {
+        >i {
+            float: right;
+            line-height: ($height - 2px);
+            padding-left: 19px;
+        }
+    }
+    &.icon-left {
+        >i {
+            float: left;
+            line-height: ($height - 2px);
+            padding-right: 19px;
+        }
+    }
+    &.btn-outline-secondary {
+        border-color: #22c8e5;
+        color: $color-white;
+        border-width: 2px;
+        &:hover {
+            background-color: #22c8e5;
+        }
+    }
+    &.style3 {
+        background-color: #e36e91;
+        &:hover {
+            background-color: darken($color: #e36e91, $amount: 15);
+        }
+    }
+    &.style4 {
+        background-color: #738ee4;
+        box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.1);
+        &:hover {
+            background-color: darken($color: #738ee4, $amount: 15);
+        }
+    }
+    &.style5 {
+        background-color: #1e348c;
+        box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.1);
+        &:hover {
+            background-color: darken($color: #1e348c, $amount: 10);
+        }
+    }
+    &.style6 {
+        background-color: rgba($color: $color-white, $alpha: .12);
+        box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        &:hover {
+            background-color: rgba($color: $color-white, $alpha: .8);
+            color: $color-black;
+        }
+    }
+    &.style7 {
+        box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.25);
+        background-color: #f5b961;
+        &:hover {
+            background-color: darken($color: #f5b961, $amount: 10);
+        }
+    }
+    &.style8 {
+        background-color: $color-white;
+        box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.1);
+        color: #522cea;
+        font-size: rem(14px);
+        font-weight: 500;
+        >i {
+            font-size: rem(22px);
+        }
+        &.icon-left {
+            >i {
+                padding-right: 9px;
+            }
+        }
+        &.icon-right {
+            >i {
+                padding-left: 9px;
+            }
+        }
+        &:hover {
+            background-color: #522cea;
+            color: $color-white;
+        }
+    }
+    &.square {
+        border-radius: 0px;
+    }
+}
+
+.btn-gradient {
+    background-image: linear-gradient( 93deg, rgb(3, 105, 209) 0%, rgb(0, 236, 188) 100%);
+}
+
+.btn-gradient2 {
+    background: linear-gradient(99deg, rgba(3, 105, 209, 1) 0%, rgba(0, 236, 188, 1) 60%);
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 22.5px;
+    padding: 0 20px;
+    height: 45px;
+    line-height: 45px;
+    @include transition;
+    background-size: 101% auto;
+    &:hover {
+        background-size: 200% auto;
+        background-position: left center;
+    }
+    i {
+        padding-right: 7px;
+        +i {
+            padding-left: 7px;
+            padding-right: 0px;
+        }
+    }
+}
+
+.btn-gradient3 {
+    background: rgb(178, 36, 239);
+    background: linear-gradient(119deg, rgba(178, 36, 239, 1) 11%, rgba(80, 85, 250, 1) 55%);
+    background-size: 101% auto;
+    &:hover {
+        background-size: 200% auto;
+        background-position: left center;
+    }
+}
+
+.btn-gradient4 {
+    background: rgb(255, 143, 30);
+    background: linear-gradient(90deg, rgba(255, 143, 30, 1) 0%, rgba(255, 143, 30, 1) 50%, rgba(254, 105, 11, 1) 100%);
+    box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.15);
+    background-size: 101% auto;
+    &:hover {
+        background-size: 200% auto;
+        background-position: left center;
+    }
+}
+
+.underline-btn {
+    position: relative;
+    font-weight: 500;
+    @include transition;
+    z-index: 1;
+    letter-spacing: .5px;
+    i {
+        padding-left: 5px;
+        position: relative;
+        top: 1px;
+    }
+    &:before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: -6px;
+        height: 8px;
+        background-color: #ffe377;
+        width: calc(100% - 15px);
+        z-index: -1;
+        transform: scale(0, 1);
+        transform-origin: left;
+        @include transition;
+    }
+    &:hover {
+        color: $color-black;
+        &::before {
+            transform: scale(1, 1);
+        }
+    }
+}
+
+.btn-wraper {
+    .btn {
+        &:not(:last-child) {
+            margin-right: 18px;
+        }
+    }
+}

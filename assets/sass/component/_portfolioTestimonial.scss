@@ -1,0 +1,118 @@
+.portfolio-testimonial-area {
+    padding-top: 48px;
+    .agency-section-title.style7 {
+        // z-index: 9;
+        .shuffle-letter-title-wraper {
+            transform: none;
+            top: -85px;
+        }
+    }
+}
+
+.portfolio-testimonial-wraper {
+    .star-lists {
+        margin-bottom: 30px;
+        >li {
+            &:not(:last-child) {
+                margin-right: 2px;
+            }
+        }
+    }
+}
+
+.portfolio-testimonial-slider {
+    box-shadow: 29.698px 29.698px 60px 0px rgba(0, 0, 0, 0.2);
+    background-color: $color-white;
+    position: relative;
+    z-index: 4;
+    padding-left: 80px;
+    padding-right: 50px;
+    height: calc(602px - 95px);
+    .owl-stage-outer {
+        top: -95px;
+    }
+}
+
+.portfolio-testimonial-content {
+    padding-top: 95px;
+}
+
+.star-lists {
+    >li {
+        color: #fec42d;
+        font-size: rem(15px);
+    }
+}
+
+.portfolio-testimonial-details {
+    margin-bottom: 40px;
+    >p {
+        font-size: rem(18px);
+        font-style: italic;
+        color: rgba($color: $color-black, $alpha: .7)
+    }
+}
+
+.portfolio-testimonial-info {
+    >img {
+        margin-bottom: 10px;
+    }
+    >p {
+        color: rgba($color: $color-black, $alpha: .7);
+        font-size: rem(15px);
+    }
+}
+
+.single-portfolio-testimonial {
+    // background-color: $color-white;
+    position: relative;
+    .quote-icon {
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        pointer-events: none;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
+
+.portfolio-testimonial-person {
+    // top: -95px;
+    // position: relative;
+    >img {
+        margin-left: auto;
+    }
+}
+
+.vertical-dot {
+    .owl-dots {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        .owl-dot {
+            display: block;
+            >span {
+                background-color: rgba($color: $color-black, $alpha: .1);
+                &::before {
+                    background: rgb(19, 81, 244);
+                    background: linear-gradient(0deg, rgba(19, 81, 244, 1) 0%, rgba(7, 39, 235, 1) 100%);
+                    border: 0px;
+                    @include equal-size(16px);
+                    z-index: -1;
+                    top: -4px;
+                    left: -4px;
+                }
+            }
+            &.active {
+                >span {
+                    background-color: $color-white;
+                }
+            }
+            &:not(:last-child) {
+                margin-right: 0px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}

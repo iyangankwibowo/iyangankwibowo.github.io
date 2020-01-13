@@ -1,0 +1,56 @@
+.growth-card-section {
+    position: relative;
+    .growth-card-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+    }
+    > .container {
+        position: relative;
+        z-index: 2;
+    }
+    .simple-btn {
+        font-size: rem(20px);
+        font-weight: 400;
+        letter-spacing: -.4px;
+    }
+}
+
+/* info card */
+.info-card {
+    border-radius: 10px;
+    background-color: $color-white;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.07);
+    @include transition;
+    &:hover {
+        transform: translateY(-15px);
+        .info-card-header {
+            > img {
+                transform: rotateY(360deg);
+            }
+        }
+    }
+    padding: 60px 35px;
+    .info-card-header {
+        margin-bottom: 20px;
+        > img {
+            @include transition;
+            transform: rotateY(0deg);
+        }
+    }
+    .info-card-body {
+        .card-title {
+            color: $color-secondary;
+            font-size: rem(22px);
+            font-family: $bodyFont;
+            margin-bottom: 20px;
+            letter-spacing: -.2px;
+        }
+        p {
+            color: #a4a4a4;
+        }
+    }
+}

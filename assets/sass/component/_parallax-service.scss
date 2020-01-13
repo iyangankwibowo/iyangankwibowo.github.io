@@ -1,0 +1,73 @@
+.parallax-service {
+    max-height: 100vh;
+}
+
+.single-service {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    &.bg-1 {
+        background-color: #1d2786;
+    }
+    &.bg-2 {
+        background-color: #0f51aa;
+    }
+    &.bg-3 {
+        background-color: #283149;
+    }
+}
+.parallax-service-content {
+    position: relative;
+    color: $color-white;
+    z-index: 1;
+    .watermark-icon {
+        font-size: rem(150px);
+        color: rgba($color: $color-white, $alpha: .03);
+        top: -70px;
+        z-index: -1;
+    }
+    .section-title {
+        margin-bottom: 20px;
+        font-weight: 500;
+        color: $color-white;
+    }
+    p {
+        font-size: rem(15.01px);
+        color: #a8abc8;
+        margin-bottom: 40px;
+    }
+    .simple-btn {
+        color: $color-white;
+        letter-spacing: .5px;
+        font-weight: 500;
+    }
+}
+
+.swiper-container-vertical {
+    > .swiper-pagination-bullets {
+        .swiper-pagination-bullet {
+            margin: 14px 0;
+        }
+    }
+}
+.swiper-pagination-bullet {
+    transform-origin: center center;
+    @include transition;
+}
+.swiper-pagination-bullet-active {
+    background-color: rgba($color: $color-black, $alpha: .5);
+    transform: scale(2);
+}
+
+.swiper-slide {
+    &:nth-child(even) {
+        > .single-service {
+            .row {
+                flex-direction: row-reverse;
+            }
+            .parallax-service-img {
+                margin-left: -70px;
+            }
+        }
+    }
+}

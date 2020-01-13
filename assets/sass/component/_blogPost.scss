@@ -1,0 +1,182 @@
+$blog-block-post: true;
+$post-card: true;
+
+
+@if $blog-block-post == true {
+    .blog-block-post {
+        padding: 50px;
+        background-color: $color-white;
+        &.radius  {
+            border-radius: 10px;
+            .entry-thumb {
+                border-radius: 10px;
+            }
+        }
+        .entry-thumb {
+            position: relative;
+            overflow: hidden;
+            display: block;
+            > img {
+                @include transition;
+            }
+        }
+        > .row {
+            [class^="col-"] {
+                &:last-child {
+                    .post-body {
+                        padding: {
+                            left: 60px;
+                        }
+                    }
+                }
+                &:first-child {
+                    .post-body {
+                        padding: {
+                            right: 60px;
+                        }
+                    }
+                }
+            }
+        }
+        .post-body {
+            padding: {
+                top: 85px;
+            }
+        }
+        .entry-title {
+            font-size: rem(36px);
+            font-weight: 900;
+            margin-bottom: 0px;
+            a {
+                color: $color-black;
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+            + .post-meta-list {
+                margin-bottom: 0;
+                margin-top: 35px;
+            }
+        }
+        .entry-thumb {
+            box-shadow: 29.698px 29.698px 60px 0px rgba(0, 0, 0, 0.2);
+            > img {
+                width: 100%;
+            }
+        }
+        .entry-header {
+            margin-bottom: 30px;
+            .post-meta-list {
+                margin-bottom: 15px;
+            }
+        }
+        .post-footer {
+            > p {
+                color: #8d8d8d;
+                margin-bottom: 35px;
+            }
+        }
+        &:hover {
+            .entry-thumb {
+                > img {
+                    transform: scale(1.05);
+                    opacity: .8;
+                }
+            }
+        }
+        &.box-shadow {
+            box-shadow: 9.899px 9.899px 30px 0px rgba(0, 0, 0, 0.1);
+        }
+        .post-footer {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@if $post-card == true {
+    /* blog post card */
+    .post-card {
+        background-color: $color-white;
+        @include transition;
+        box-shadow: 9.899px 9.899px 30px 0px rgba(0, 0, 0, 0.1);
+        padding: 60px 40px;
+        border-radius: 6px;
+        .entry-header {
+            .post-meta-list {
+                margin-bottom: 17px;
+            }
+            .entry-title {
+                font-size: rem(18px);
+                line-height: 1.333;
+                a {
+                    color: $color-black;
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+            }
+            .border-hr {
+                margin: {
+                    top: 25px;
+                    bottom: 22px;
+                }
+            }
+        }
+        .post-body {
+            color: #8d8d8d;
+        }
+        &:hover {
+            transform: translateY(-15px);
+        }
+    }
+}
+
+
+
+.post-meta-list {
+    &.meta-style2 {
+        color: #a3a3a3;
+        > span {
+            display: inline-block;
+            a {
+                color: #a3a3a3;
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+            i {
+                color: inherit;
+            }
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+        }
+    }
+}
+
+.post-author {
+    &.author-style2 {
+        .author-img {
+            display: inline-block;
+            margin-right: 15px;
+            > img {
+                @include equal-size(30px);
+                box-shadow: 4.95px 4.95px 15px 0px rgba(0, 0, 0, 0.2);
+                border-radius: 50%;
+                @include transition;
+            }
+        }
+        .author-name {
+            color: $color-black;
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}
+.border-hr {
+    height: 3px;
+    width: 30px;
+    display: block;
+    background-color: #e5e5e5;
+}

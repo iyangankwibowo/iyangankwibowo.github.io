@@ -1,0 +1,38 @@
+.agency-intro {
+    padding-top: 15px;
+    .agency-section-title {
+        .watermark-title {
+            top: -68px;
+            left: -16px;
+        }
+    }
+    p {
+        padding-right: 95px;
+        margin-bottom: 40px;
+    }
+    .xs-list {
+        > li {
+            &:not(:last-child) {
+                margin-right: 60px;
+            }
+        }
+        margin-bottom: 50px;
+    }
+}
+
+.agency-intro-video {
+    border-radius: 10px;
+    box-shadow: 0px 15px 70px 0px rgba(0, 0, 0, 0.3);  
+    position: relative;
+    overflow: hidden;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        opacity: 0.412;
+    }
+}

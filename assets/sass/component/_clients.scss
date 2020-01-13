@@ -1,0 +1,43 @@
+.client-slider {
+    .item {
+        min-height: 195px;
+        @include flex-position(flex, center, center);
+        cursor: all-scroll;
+        > img {
+            filter: grayscale(100%);
+            @include transition;
+        }
+        &:hover {
+            > img {
+                filter: grayscale(0%);
+            }
+        }
+    }
+}
+.client-slider-style2 {
+    .item {
+        > img {
+            opacity: .1;
+            @include transition;
+        }
+        &:hover {
+            > img {
+                opacity: .5;
+            }
+        }
+    }
+}
+.banner-client-slider {
+    .item {
+        min-height: auto;
+        > img {
+            @include transition;
+            opacity: .2;
+        }
+        &:hover {
+            > img {
+                opacity: 1;
+            }
+        }
+    }
+}

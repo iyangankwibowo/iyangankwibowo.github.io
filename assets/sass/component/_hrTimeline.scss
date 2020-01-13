@@ -1,0 +1,128 @@
+.hr-timeline-group {
+    counter-reset: myNumber;
+    [class^="col-"]{
+        &:nth-of-type(2) ,
+        &:nth-of-type(3){
+            .hr-single-timeline {
+                .hr-timeline-content-wraper {
+                    margin: {
+                        left: auto;
+                        right: auto;
+                    }
+                }
+                .number-count {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            
+        }
+        &:last-child {
+            .hr-single-timeline {
+                .hr-timeline-content-wraper {
+                    margin: {
+                        left: auto;
+                    }
+                }
+                .number-count {
+                    left: inherit;
+                    right: 0;
+                }
+            }
+        }
+        &:nth-of-type(3) {
+            .hr-single-timeline {
+                margin-top: -60px;
+            }
+        }
+        &:nth-child(even) {
+            .hr-single-timeline {
+                top: 60px;
+            }
+        }
+        &:first-child {
+            .hr-single-timeline {
+                margin-top: -40px;
+            }
+        }
+    }
+}
+
+.hr-single-timeline {
+    position: relative;
+    z-index: 1;
+    &:hover {
+        .hr-timeline-content-wraper {
+            transform: rotateY(360deg);
+        }
+    }
+    .number-count {
+        position: absolute;
+        bottom: calc(100% - 45px);
+        left: 0;
+        z-index: -1;
+    }
+    &.color-1 {
+        .number-count ,
+        .hr-timeline-content > i {
+            color: #4246e8;
+        }
+    }
+    &.color-2 {
+        .number-count ,
+        .hr-timeline-content > i {
+            color: #7ad9fd;
+        }
+    }
+    &.color-3 {
+        .number-count ,
+        .hr-timeline-content > i {
+            color: #ff5382;
+        }
+    }
+}
+.number-count {
+    font-size: rem(115px);
+    font-weight: 700;
+    color: #f5a802;
+    display: block;
+    line-height: 1;
+    opacity: .2;
+    &::before {
+        counter-increment: myNumber;
+        content: '0' counter(myNumber);
+    }
+}
+
+.hr-timeline-content-wraper {
+    @include equal-size(150px);
+    border-radius: 50%;
+    background-color: $color-white;
+    box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: transform .6s ease-in-out;
+    transform: rotateY(0deg);
+    .hr-timeline-content {
+        width: 100%;
+        color: #a1a1a1;
+        > i {
+            color: #f5a802;
+            font-size: rem(40px);
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.hr-timeline-section {
+    position: relative;
+    .timeline-wave {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,42 @@
+.about-slider-wraper {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        background: rgb(178,36,239);
+        background: linear-gradient(119deg, rgba(178,36,239,1) 31%, rgba(80,85,250,1) 84%);
+        height: 100%;
+        width: calc(100% - 227px);
+        left: 0;
+        right: 0;
+    }
+    .about-slider {
+        margin-left: 60px;
+        top: -80px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-top: 80px;
+        width: calc(100% - 60px);
+    }
+    .owl-dots {
+        position: absolute;
+        bottom: -53px;
+        right: 70px;
+        .owl-dot {
+            span {
+                @include equal-size(6px);
+                background-color: rgba($color: $color-black, $alpha: .3);
+                &::before {
+                    border: 0px;
+                    background: rgb(178,36,239);
+                    background: linear-gradient(119deg, #b224ef 20%, #5055fa 84%);
+                    background-size: 140% auto;
+                }
+            }
+        }
+    }
+    .owl-carousel .owl-item > .single-slider > img {
+        width: 100%;
+    }
+}

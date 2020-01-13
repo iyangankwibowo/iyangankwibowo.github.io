@@ -1,0 +1,32 @@
+.vertical-tabs {
+    .nav-item {
+        width: 100%;
+        margin-bottom: 0px;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        .nav-link {
+            font-size: rem(22px);
+            font-weight: 900;
+            font-family: $bodyFont;
+            @include transition;
+            &:before {
+                content: "\e940";
+                font-family: $iconFont2;
+                font-size: rem(15px);
+                display: inline-block;
+                transition: opacity .3s ease;
+                opacity: 0;
+                padding-right: 9px;
+            }
+            &.active,
+            &:hover {
+                color: #f14b59;
+                padding-left: 19px;
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

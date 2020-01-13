@@ -1,0 +1,248 @@
+.agency-filter-wraper {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 30px;
+    .filter-button-wraper {
+        margin-top: 12px;
+    }
+    .agency-section-title {
+        margin-bottom: 0px;
+    }
+}
+
+.main-filter {
+    text-align: right;
+    li {
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+        a {
+            display: block;
+            font-size: rem(14px);
+            color: $bColor;
+            font-weight: 700;
+            position: relative;
+            @include transition;
+            padding-bottom: 20px;
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: -1px;
+                width: 100%;
+                background-color: $color-black;
+                height: 1px;
+                transform: scale(0, 1);
+                transform-origin: center center;
+                @include transition;
+            }
+            &:hover,
+            &.selected {
+                color: #000000;
+                &::before {
+                    transform: scale(1, 1);
+                }
+            }
+        }
+    }
+}
+
+.xs-3d-project-card {
+    img {
+        transform: translateZ(40px);
+    }
+}
+
+.cases-grid {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.single-cases-card {
+    text-align: center;
+    margin: 15px;
+    .xs-title {
+        margin-bottom: 5px;
+    }
+    @include transition;
+    &:hover {
+        .card-image {
+            box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.1);
+            &::before {
+                background-color: #b3d7f3;
+            }
+        }
+    }
+    .card-image {
+        position: relative;
+        padding: 30px;
+        margin-bottom: 25px;
+        z-index: 1;
+        @include transition;
+        img {
+            box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.2);
+            width: 100%;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(242, 249, 254);
+            @include transition;
+            z-index: -1;
+        }
+    }
+    .hover-content {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        @include transition;
+        opacity: 0;
+        a {
+            display: block;
+            @include equal-size-lineHeight(70px);
+            border-radius: 50%;
+            background-color: rgba($color: $color-white, $alpha: .2);
+            border-radius: 100%;
+            text-align: center;
+            color: #f9fafe;
+            font-size: rem(22px);
+        }
+    }
+}
+
+/* cases grid style 2 */
+
+.case-card-style2 {
+    margin-bottom: 65px;
+    .single-cases-card {
+        text-align: left;
+        &:hover {
+            .card-image {
+                box-shadow: none;
+                &::after {
+                    opacity: 0.902;
+                }
+                .hover-content {
+                    top: 50%;
+                    opacity: 1;
+                }
+            }
+        }
+        .card-image {
+            &::after {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                border-radius: 5px;
+                background: rgb(0, 236, 188);
+                background: linear-gradient(-31deg, #00ecbc 10%, #0369d1 70%);
+                opacity: 0;
+                @include transition;
+            }
+            padding: 0px;
+            img {
+                box-shadow: none;
+                border-radius: 5px;
+            }
+            &::before {
+                display: none;
+            }
+        }
+    }
+    &.style2 {
+        .single-cases-card {
+            @include transition;
+            &:hover {
+                box-shadow: 29.698px 29.698px 60px 0px rgba(0, 0, 0, 0.2);
+            }
+            .card-image {
+                margin-bottom: 0px;
+                &::after {
+                    border-radius: 0px;
+                }
+                img {
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+}
+
+/* case grid style 3 */
+
+.case-card-style3 {
+    .single-cases-card {
+        margin: 0px;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        &:hover {
+            .card-image {
+                box-shadow: none;
+                >img {
+                    transform: scale(1.05);
+                }
+            }
+            .cases-content {
+                transform: translateY(105%);
+            }
+        }
+        &.style2 {
+            .cases-content {
+                background-color: rgba($color: #363636, $alpha: .95);
+            }
+        }
+        &.style3 {
+            .cases-content {
+                background-color: rgba($color: #f14b59, $alpha: .95);
+                >.tag {
+                    color: $color-white;
+                }
+            }
+        }
+        .cases-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 6;
+            padding: 32px 50px;
+            background-color: $color-ternary;
+            @include transition;
+            >.tag {
+                color: #f14b59;
+                font-weight: 500;
+                font-size: rem(15px);
+                display: block;
+            }
+            >.xs-title {
+                font-size: rem(28px);
+                font-weight: 700;
+                font-family: $bodyFont;
+                margin-bottom: 0px;
+                color: $color-white;
+            }
+        }
+        .card-image {
+            padding: 0px;
+            margin-bottom: 0px;
+            >img {
+                box-shadow: none;
+                @include transition;
+            }
+            &::before {
+                display: none;
+            }
+        }
+    }
+}

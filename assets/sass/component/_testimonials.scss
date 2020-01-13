@@ -1,0 +1,187 @@
+.review-area {
+    background-repeat: no-repeat;
+    background-position: top 100px center;
+    .main-title {
+        margin-bottom: 0px;
+    }
+    &.xs-section-padding {
+        padding-bottom: 60px;
+        padding-top: 80px;
+    }
+}
+
+.single-review-thumb {
+    > img {
+        @include equal-size(50px);
+        border-radius: 50%;
+        @include transition;
+        transform: scale(1);
+        transform-origin: center center;
+        margin: {
+            left: auto;
+            right: auto;
+        }
+    }
+}
+
+.owl-item {
+    &.current {
+        .single-review-thumb {
+            > img {
+                transform: scale(2);
+            }
+        }   
+    }
+}
+.review-slider-thumb {
+    width: calc(100% - 300px);
+    margin: {
+        left: auto;
+        right: auto;
+        bottom: 50px;
+    };
+    .owl-stage-outer {
+        padding: 28px 0;
+    }
+}
+
+.review-content {
+    &.review-style2 {
+        .star-rating-wraper {
+            margin-bottom: 12px;
+        }
+        > p {
+            color: #1e1e1e;
+            font-size: rem(18px);
+            font-family: $fontCursive;
+            margin-bottom: 24px;
+        }
+        .reviewer-bio {
+            h5 {
+                color: #1e1e1e;
+                font-family: $bodyFont;
+                margin-bottom: 10px;
+            }
+            p {
+                margin-bottom: 0px;
+                color: #9a9a9a;
+                letter-spacing: 1.5px;
+            }
+        }
+    }
+    hr {
+        width: 250px;
+        display: block;
+        border-color: #e7e7e7;
+        margin: {
+            top: 0px;
+            bottom: 30px;
+        }
+    }
+    &.text-center {
+        hr {
+            margin: {
+                left: auto;
+                right: auto;
+            }
+        }   
+    }
+}
+
+/* testimonials */
+.agency-testimonial-area2 {
+    @include background-content();
+}
+.bouble-slider-privew {
+    padding-left: 30px;
+    .owl-nav {
+        margin-top: 50px;
+        button {
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+            &.owl-next ,
+            &.owl-prev {
+                @include equal-size-lineHeight(60px);
+                display: inline-block;
+                background-color: $color-white;
+                @include transition;
+                border-radius: 50%;
+                color: #b5b6d1;
+                &:hover {
+                    color: $color-secondary;
+                    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.1);
+                }       
+            }
+        }
+    }
+}
+.single-bouble-thumb {
+    @include equal-size(170px);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid transparent;
+    @include transition;
+    &.thumb-1 {
+        @include equal-size(120px);
+    }
+    &.thumb-2 {
+        @include equal-size(90px);
+    }
+    &.thumb-3 {
+        @include equal-size(66px);
+    }
+    &.thumb-4 {
+        @include equal-size(50px);
+    }
+}
+
+.bouble-slider-thumb {
+    .owl-item {
+        &:nth-child(1) {
+            transform: translateX(345px) translateY(60px);
+        }
+        &:nth-child(2) {
+            transform: translateX(44px) translateY(220px);
+        }
+        &:nth-child(3) {
+            transform: translateX(-144px) translateY(60px);
+        }
+        &:nth-child(4) {
+            transform: translateX(-300px) translateY(220px);
+        }
+        &:nth-child(5) {
+            transform: translateX(-430px) translateY(114px);
+        }
+    }
+    .current {
+        .single-bouble-thumb {
+            border-color: $color-white;
+            box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.12);
+        }
+    }
+}
+
+.review-content {
+    &.review-style3 {
+        .review-content-header {
+            margin-bottom: 24px;
+        }
+        > p {
+            font-style: normal;
+            font-size: rem(16px);
+        }
+        .reviewer-bio {
+            h3 {
+                font-size: rem(28px);
+                color: $color-secondary;
+                font-family: $bodyFont;
+                font-weight: 500;
+            }
+            p {
+                color: #afafaf;
+                font-size: rem(16px);
+            }
+        }
+    }
+}

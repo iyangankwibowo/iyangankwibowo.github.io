@@ -1,0 +1,47 @@
+.content-over-img-wraper {
+    .content-over-img {
+        position: absolute;
+        bottom: -50px;
+        z-index: 99;
+        &.img-1 {
+            left: 0;
+        }
+        &.img-2 {
+            right: 0;
+        }
+    }
+}
+
+.delighter {
+    &.calltoaction-area-2 {
+        overflow: hidden;
+    }
+    .content-over-img-wraper {
+        .content-over-img {
+            opacity: 0;
+            visibility: hidden;
+            transition: all .6s ease;
+            &.img-1 {
+                transform: translateY(-100%);
+            }
+            &.img-2 {
+                transform: translateY(100%);
+            }
+        }
+    }
+    &.started {
+        &.calltoaction-area-2 {
+            overflow: visible;
+        }
+        .content-over-img-wraper {
+            .content-over-img {
+                opacity: 1;
+                visibility: visible;
+                &.img-1,
+                &.img-2 {
+                    transform: translateY(0%);
+                }
+            }
+        } 
+    }
+}

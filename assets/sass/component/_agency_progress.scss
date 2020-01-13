@@ -1,0 +1,114 @@
+.working-progress-area {
+    position: relative;
+    .doodle-parallax {
+        .single-doodle {
+            position: absolute;
+            &.one {
+                right: -120px;
+                top: 482px;
+            }
+            &.two {
+                bottom: 320px;
+                left: -250px;
+            }
+        }
+    }
+}
+
+/* count number */
+.single-working-progress {
+    counter-increment: step;
+}
+.count-number {
+    position: relative;
+    display: inline-block;
+    width: 62px;
+    height: 63px;
+    text-align: center;
+    z-index: 1;
+    line-height: 63px;
+    margin-bottom: 20px;
+    &::before {
+        content: counter(step);
+        color: #ffffff;
+        font-size: rem(22px);
+        font-weight: 700;
+        margin-left: -2px;
+        display: inline-block;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/progress/spin.png);
+        @include background-content();
+        z-index: -1;
+    }
+}
+
+/* count number spin effect */
+.spin {
+    &.count-number {
+        visibility: hidden;
+        &::after {
+            transform-origin: center center;
+            transform: rotate(0deg);
+            transition: transform 1s ease;
+        }
+        &.animated {
+            &::after {
+                transform: rotate(720deg);
+            }
+        }
+    }
+}
+
+
+.working-progress-images {
+    img {
+        border-radius: 5px;
+        box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.06);
+    }
+}
+
+.working-progress-content {
+    padding-top: 25px;
+    .section-title {
+        font-size: rem(30px);
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+}
+
+.single-working-progress {
+    &:not(:last-child) {
+        position: relative;
+        padding-bottom: 300px;
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 555px;
+            height: 200px;
+            background-image: url(../images/progress/progress-line.png);
+        }
+    }
+    &:nth-child(even) {
+        > .row {
+            flex-direction: row-reverse;
+        }
+        .working-progress-images {
+            padding-right: 28px;
+        }
+    }
+    &:nth-child(odd) {
+        .working-progress-content {
+            padding-right: 30px;
+        }
+    }
+}

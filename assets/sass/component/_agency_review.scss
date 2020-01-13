@@ -1,0 +1,116 @@
+.agency_review_section {
+    background-repeat: no-repeat;
+    background-position: top 260px left;
+    // background-size: contain;
+}
+
+.review-content {
+    position: relative;
+    > p {
+        color: #000000;
+        margin-bottom: 30px;
+        font-size: rem(24px);
+        font-style: italic;
+    }
+    .watermark-icon {
+        color: $color-black;
+        opacity: .05;
+        top: -20px;
+        left: 60px;
+        font-size: 75px;
+    }
+    .review-image {
+        width: 116px;
+        height: 116px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        img {
+            -webkit-mask: url(../images/team/shape-mask.png);
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center center;
+        }
+    }
+    .reviewer-bio {
+        h5 {
+            font-family: $fontCursive;
+            color: #1bd1ea;
+            font-weight: 700;
+            font-size: rem(20px);
+            margin-bottom: 0px;
+        }
+        p {
+            color: #7a7a7a;
+            font-size: rem(14px);
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.review-slider {
+    position: relative;
+    .owl-stage-outer {
+        padding: 30px 0;
+    }
+    .owl-nav {
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            @include transition;
+            &:hover {
+                color: #0c5adb;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .owl-prev {
+            left: -161px;
+        }
+        .owl-next {
+            right: -161px;
+        }
+    }
+}
+
+/* owl dots */
+.owl-dots {
+    text-align: center;
+    .owl-dot {
+        display: inline-block;
+        outline: none;
+        &:not(:last-child ) {
+            margin-right: 15px;
+        }
+        span {
+            display: block;
+            border-radius: 50%;
+            background-color: rgba($color: #c0c0c0, $alpha: .502);
+            width: 8px;
+            height: 8px;
+            position: relative;
+            @include transition;
+            &::before {
+                position: absolute;
+                content: "";
+                top: -6px;
+                left: -6px;
+                border: 1px solid rgba(27, 209, 234, 0.502);
+                border-radius: 50%;
+                width: calc(100% + 12px);
+                height: calc(100% + 12px);
+                transform: scale(0);
+                @include transition;
+            }
+        }
+        &.active {
+            span {
+                background-color: #1bd1ea;
+                &::before {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}

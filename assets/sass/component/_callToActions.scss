@@ -1,0 +1,110 @@
+.calltoaction-area {
+    position: relative;
+    @include background-content();
+    background-attachment: fixed;
+    padding: 102px 0;
+    .xs-overlay {
+        opacity: .9;
+    }
+}
+
+.call-to-action {
+    position: relative;
+    z-index: 2;
+    .content-title {
+        color: $color-white;
+        margin-bottom: 35px;
+    }
+    .btn-outline-secondary {
+        line-height: 52px;
+    }
+    &.action-style2 {
+        .content-title {
+            font-size: rem(36px);
+            font-family: $bodyFont;
+            margin-bottom: 40px;
+        }
+        .btn {
+            height: 60px;
+            line-height: 60px;
+            border-radius: 30px;
+            padding: 0 33px;
+            &.icon-right ,
+            &.icon-left {
+                > i {
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+}
+
+/* call to action style 2 */
+.calltoaction-area-2 {
+    position: relative;
+    @include background-content();
+    .xs-overlay {
+        background-color: #4243e7;
+        opacity: .9;
+    }
+    &.version-gradient {
+        .xs-overlay {
+            background: rgb(49,84,251);
+            background: linear-gradient(90deg, rgba(49,84,251,1) 18%, rgba(141,228,232,1) 100%);
+        }
+    }
+}
+.call-to-action-wraper {
+    position: relative;
+    padding: 100px 0;
+}
+
+/* call to action 4 */ 
+.calltoaction-area-4 {
+    &.delighter {
+        padding: 0 80px;
+        transition: all .6s ease;
+        &.started {
+            overflow: hidden;
+            padding: 20px 0px;
+            .calltoaction-info {
+                margin: 0 auto 0 auto;
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+                background-color: #4843d2;
+                max-width: 100%;
+            }
+        }
+    }
+    .calltoaction-info {
+        transition: all .6s ease;
+        background-color: #7447ff;
+        max-width: 100%;
+        padding: 100px 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-blend-mode: color-burn;
+    }
+}
+.call-to-action {
+    &.action-style3 {
+        .content-title {
+            font-size: rem(48px);
+            font-family: $bodyFont;
+            margin-bottom: 37px;
+        }
+        .btn {
+            padding: 0 36px;
+            @include height-lineheight(65px);
+            &:hover {
+                background-color: #7447ff;
+            }
+            &[class*=icon-] {
+                > i {
+                    line-height: 58px;
+                }
+            }
+        }
+    }
+}

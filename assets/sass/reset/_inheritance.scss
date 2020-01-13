@@ -1,0 +1,461 @@
+h1,
+h2,
+h3,
+h4 {
+    font-family: $titleFont;
+    letter-spacing: -.25px;
+}
+
+h1,
+.banner-title {
+    font-size: rem(60px);
+    font-weight: 600;
+    margin-bottom: 45px;
+}
+
+h2,
+.section-title {
+    font-size: rem(36px);
+    font-weight: 700;
+    color: $color-black;
+    span,
+    em {
+        font-family: $fontCursive;
+    }
+}
+
+h4,
+.xs-title {
+    font-size: rem(22px);
+    font-weight: 600;
+    &.small {
+        font-size: rem(18px);
+    }
+}
+
+h4,
+.xs-title,
+a {
+    color: $color-black;
+}
+
+h3,
+.content-title {
+    color: $color-black;
+    font-size: rem(28px);
+    font-weight: 700;
+    em {
+        font-family: $fontCursive;
+    }
+}
+
+.entry-title {
+    a {
+        @include transition;
+        &:hover {
+            color: #1bd1ea;
+        }
+    }
+}
+
+.watermark-title {
+    font-family: $titleFont;
+    display: block;
+    font-size: rem(200px);
+    color: #f8f8f8;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    line-height: 1;
+    z-index: -1;
+}
+
+/* section padding */
+
+$section-padding: 100px;
+.xs-section-padding {
+    padding: $section-padding 0;
+}
+
+.xs-section-padding-bottom {
+    padding-bottom: $section-padding;
+}
+
+.xs-section-padding-top {
+    padding-top: $section-padding;
+}
+
+.section-padding-small {
+    padding: ($section-padding - 40px) 0;
+}
+
+.section-padding-medium {
+    padding: ($section-padding - 20px) 0;
+}
+
+@for $i from 0 through 10 {
+    .xs-mb-#{$i} {
+        margin-bottom: $i * 10px;
+    }
+    .xs-pb-#{$i} {
+        padding-bottom: $i * 10px;
+    }
+}
+
+/* margin 0 */
+
+.xs-margin-0 {
+    margin: 0;
+}
+
+/* xs padding */
+
+.xs-padding-0 {
+    padding: 0;
+}
+
+/* overlay list */
+
+.xs-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    z-index: 0;
+}
+
+// first color name and second your selected color
+$colorList: (black, $color-black),
+(white, $color-white),
+(primary, $color-primary),
+(secondary, $color-secondary),
+(gray, #fafafa);
+@each $colorName,
+$color in $colorList {
+    /* color */
+    .#{$colorName}-color {
+        color: $color;
+    }
+    /* background color */
+    .#{$colorName}-bg {
+        background-color: $color;
+    }
+}
+
+/* remove from control focus box shadow */
+
+.form-control {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+/* owl image preset */
+
+.owl-carousel .owl-item img {
+    width: auto;
+}
+
+/* tab pane animation */
+
+.tab-pane.animated {
+    animation-duration: 1.5s;
+}
+
+/* remove iframe box shadow and background */
+
+.mfp-iframe-scaler iframe {
+    box-shadow: none;
+    background: transparent;
+}
+
+a {
+    @include transition;
+}
+
+/* simple button */
+
+.simple-btn {
+    font-weight: 700;
+    display: inline-block;
+    i {
+        padding-left: 8px;
+        position: relative;
+        top: 2px;
+        transition: padding-left .4s ease;
+    }
+    &:hover {
+        i {
+            padding-left: 4px;
+        }
+    }
+    &.style2 {
+        color: $color-secondary;
+    }
+}
+
+/* watermark icon */
+
+.watermark-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p {
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+/* input type number spinner turn of chrome */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* input type number spinner turn of firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* gradient icon */
+
+.gradient-icon {
+    font-size: rem(36px);
+    background: linear-gradient(119deg, rgba(178, 36, 239, 1) 19%, rgba(80, 85, 250, 1) 84%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: rgb(178, 36, 239);
+}
+
+/* gradient title */
+
+.gradient-title {
+    background: linear-gradient(119deg, rgba(178, 36, 239, 1) 19%, rgba(80, 85, 250, 1) 84%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: rgb(178, 36, 239);
+}
+
+/* gradient background */
+
+.gradient-bg {
+    background: rgb(178, 36, 239);
+    background: linear-gradient(117deg, rgba(178, 36, 239, 1) 40%, rgba(80, 85, 250, 1) 100%);
+}
+
+/* gradient background */
+
+.gradient-bg-area {
+    background: rgb(11, 83, 255);
+    background: linear-gradient(90deg, rgba(11, 83, 255, 1) 0%, rgba(74, 229, 233, 1) 100%);
+    position: relative;
+    z-index: 1;
+    .background-wave-shape {
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: .03;
+        z-index: -1;
+    }
+    .pillow-image {
+        position: absolute;
+        top: -156px;
+        right: 87px;
+    }
+}
+
+.main-content-wraper {
+    background-color: #f0f3fc;
+}
+
+/* underline title */
+
+.title-underline {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: calc(0% + 9px);
+        left: 0;
+        display: inline-block;
+        height: 20px;
+        width: 100%;
+        background-color: #ffebdf;
+        z-index: -1;
+    }
+}
+
+/* multipile dots */
+
+.multipile-dots {
+    $dotColor: #d9d9d9;
+    display: block;
+    @include equal-size(5px);
+    border-radius: 50%;
+    background-color: $dotColor;
+    box-shadow: 15px 0px 0px 0 $dotColor, 30px 0 0 0 $dotColor;
+}
+
+/* border animation */
+
+.border-animation {
+    position: relative;
+    overflow: hidden;
+    color: $color-black;
+    >span {
+        display: inline-block;
+        border-radius: 2.5px;
+        position: relative;
+        border-top: 5px solid;
+        transition: width 1.5s linear;
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    >.first {
+        width: 50px;
+    }
+    >.second {
+        width: 20px;
+    }
+    &.style2 {
+        color: #cccccc;
+    }
+}
+
+@keyframes move-1 {
+    0% {
+        width: 80px;
+    }
+    100% {
+        width: 0px;
+        margin-right: 0px;
+    }
+}
+
+@keyframes move-2 {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 90px;
+    }
+}
+
+.content-separete-border {
+    display: block;
+    height: 3px;
+    width: 40px;
+    background-color: #522cea;
+}
+
+/* vertical pagination */
+
+.vertical-pagination {
+    display: flex;
+    flex-direction: column;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    .swiper-pagination-bullet {
+        height: 10px;
+        width: 5px;
+        border-radius: 2.5px;
+        background-color: $color-white;
+        opacity: .2;
+        @include transition;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        &.swiper-pagination-bullet-active {
+            transform: scale(1);
+            height: 30px;
+            opacity: 1;
+        }
+    }
+}
+
+/* multiple border */
+
+.border-multiple {
+    >span {
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+        &.first {
+    @include equal-size(7px);
+    border-radius: 50%;
+    background-color: #ff5382;
+}
+
+&.second,
+&.third {
+    width: 25px;
+    height: 7px;
+    background-color: #ff5382;
+    border-radius: 3.5px;
+}
+
+}
+
+}
+
+.text-center {
+    .border-multiple {
+        margin: 0 auto;
+    }
+}
+
+.glow-btn {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        z-index: -1;
+        animation: pulse 2s infinite cubic-bezier(0.4, 0, 1, 1) both;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba($color-white, 0.2);
+    }
+    70% {
+        box-shadow: 0 0 0 60px rgba($color-white, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba($color-white, 0);
+    }
+}
+
+.tp-parallax-wrap {
+    &.position-class {
+        left: 0 !important;
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    &.vertical-slider {
+        height: 450px;
+    }
+}

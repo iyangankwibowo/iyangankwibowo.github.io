@@ -1,0 +1,19 @@
+.backtotop-wraper {
+    position: absolute;
+    bottom: 110px;
+    right: 40px;
+    transform: rotate(-90deg);
+    z-index: 1001;
+}
+
+.backtotop {
+    color: rgba($color: $color-white, $alpha: .7);
+    .long-arrow {
+        &::before {
+            color: rgba($color: $color-white, $alpha: .7);
+        }
+        &::after {
+            background-color: rgba($color: $color-white, $alpha: .7);
+        }
+    }
+}

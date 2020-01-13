@@ -1,0 +1,108 @@
+.single-more-feauture {
+    padding: 0 30px;
+    margin-bottom: 50px;
+    .more-feature-header {
+        box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.07);
+        @include equal-size-lineHeight(80px);
+        text-align: center;
+        border-radius: 50%;
+        margin-bottom: 23px;
+        transform: rotateY(0deg);
+        transition: transform .6s ease-in-out;
+        > i {
+            font-size: rem(35px);
+            color: #ffbc5c;
+        }
+    }
+    &.color-1 {
+        .more-feature-header {
+            > i {
+                color: #1edee4;
+            }
+        }
+    }
+    &.color-2 {
+        .more-feature-header {
+            > i {
+                color: #255cff;
+            }
+        }
+    }
+    &:hover {
+        .more-feature-header {
+            transform: rotateY(360deg);
+        }
+    }
+    &.text-center {
+        .more-feature-header {
+            margin: {
+                left: auto;
+                right: auto;
+            }
+        }
+    }
+    &.text-right {
+        .more-feature-header {
+            margin: {
+                left: auto;
+            }
+        }
+    }
+    .feature-title {
+        font-size: rem(18px);
+        margin-bottom: 15px;
+    }
+}
+
+.agency-banner7 {
+    + .more-features-2-section {
+        padding: {
+            top: 150px;
+        }
+    }
+}
+.more-features-2-section {
+    &.xs-section-padding {
+        padding-bottom: 70px;
+    }
+    .agency-section-title {
+        .main-title {
+            font-size: rem(48px);
+            font-family: $bodyFont;
+            font-weight: 900;
+            line-height: 1.425;
+            > span {
+                font-family: inherit;
+                color: #1edee4;
+            }
+        }
+    }
+}
+
+.more-feature-style2 {
+    .single-more-feauture {
+        padding: {
+            left: 0;
+            right: 50px;
+        }
+        &:hover {
+            .more-feature-header {
+                transform: rotate(0deg);
+            }
+        }
+        .more-feature-header {
+            @include equal-size(auto);
+            line-height: unset;
+            box-shadow: none;
+            border-radius: 0px;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .feature-title {
+            font-size: rem(22px);
+            font-family: $bodyFont;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+    }
+}

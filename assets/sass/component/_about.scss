@@ -1,0 +1,112 @@
+.about-agencifi-area {
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 100px;
+}
+
+.about-agency-title {
+    font-size: rem(42px);
+    margin-bottom: 22px;
+    span {
+        color: $color-primary;
+        font-family: inherit;
+    }
+}
+
+.about-agency-cotnent {
+    p {
+        color: $color-black;
+        margin-bottom: 20px;
+    }
+    .social-list {
+        margin-bottom: 20px;
+        li {
+            a {
+                font-size: rem(18px);
+                @include equal-size-lineHeight(60px);
+                box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+
+/* about version 2 */
+.about-v2-section {
+    &.xs-section-padding {
+        padding-bottom: 98px;
+    }
+}
+
+.about-skroll-images {
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+    > .about-skroll-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        &:not(.image-4) {
+            box-shadow: 0px 15px 65px 0px rgba(0, 0, 0, 0.15);
+        }
+        &.image-2 {
+            left: 190px;
+            top: 115px;
+        }
+        &.image-3 {
+            top: 46px;
+            left: inherit;
+            right: 0;
+        }
+        &.image-4 {
+            top: 355px;
+        }
+    }
+    .quality-info {
+        position: absolute;
+        top: 324px;
+        left: 60px;
+        z-index: 9;
+    }
+}
+.quality-info {
+    box-shadow: 0px 15px 65px 0px rgba(0, 0, 0, 0.15);
+    background-color: #7447ff;
+    padding: 48px 115px 20px 30px;
+    > h2 {
+        font-size: rem(22px);
+        font-family: $bodyFont;
+        color: $color-white;
+        font-weight: 900;
+        margin-bottom: 0px;
+    }
+    > .separete-border {
+        height: 2px;
+        display: block;
+        width: 20px;
+        background-color: $color-white;
+        margin-bottom: 14px;
+    }
+}
+
+.about-summary-content2 {
+    padding-right: 50px;
+    .about-title {
+        font-size: rem(36px);
+        font-weight: 700;
+        font-family: $bodyFont;
+        line-height: 1.333;
+        margin-bottom: 15px;
+        > span {
+            color: #522cea;
+            font-family: inherit;
+        }
+    }
+    > p {
+        color: #a3a3a3;
+        margin-bottom: 25px;
+        > a {
+            color: #7447ff;
+            border-bottom: 1px solid #c9bdff;
+        }
+    }
+}

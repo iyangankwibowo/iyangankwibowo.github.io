@@ -1,0 +1,116 @@
+.humburger {
+    display: block;
+    height: 23px;
+    cursor: pointer;
+    &:hover {
+        .humburger-icons {
+            >span {
+                &:first-child,
+                &:last-child {
+                    &::before {
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .humburger-icons {
+        width: 30px;
+        z-index: 99;
+        position: relative;
+        >span {
+            display: block;
+            height: 3px;
+            background-color: #000a7a;
+            position: relative;
+            &:not(:last-child) {
+                margin-bottom: 7px;
+            }
+            &:first-child {
+                width: 20px;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: calc(100% + 5px);
+                    top: 0;
+                    height: 100%;
+                    width: 5px;
+                    background-color: #000a7a;
+                    @include transition;
+                }
+            }
+            &:last-child {
+                width: 10px;
+                &::before {
+                    @include transition;
+                    position: absolute;
+                    content: "";
+                    left: calc(100% + 5px);
+                    top: 0;
+                    height: 100%;
+                    width: 15px;
+                    background-color: #000a7a;
+                }
+            }
+        }
+    }
+    &.style2 {
+        height: 60px;
+        border-radius: 30px;
+        background-color: #ffbc5c;
+        box-shadow: 0px 19px 30px 0px rgba(255, 188, 92, 0.48);
+        width: 80px;
+        display: flex;
+        align-items: center;
+        >.humburger-icons {
+            width: 23px;
+            margin: 0 auto;
+            >span {
+                background-color: $color-white;
+                height: 2px;
+                margin: {
+                    left: auto;
+                    right: auto;
+                }
+                &::before {
+                    background-color: $color-white;
+                }
+                &:first-child {
+                    left: -4px;
+                    width: 15.34px;
+                    &::before {
+                        left: calc(100% + 3px);
+                    }
+                }
+                &:last-child {
+                    left: -7px;
+                    width: 7.65px;
+                    &::before {
+                        left: calc(100% + 5px);
+                        width: 10px;
+                    }
+                }
+            }
+        }
+        &:hover {
+            >.humburger-icons {
+                >span {
+                    &::before {
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    &.style3 {
+        .humburger-icons {
+            >span {
+                background-color: $color-white;
+                &::before {
+                    background-color: $color-white;
+                }
+            }
+        }
+    }
+}

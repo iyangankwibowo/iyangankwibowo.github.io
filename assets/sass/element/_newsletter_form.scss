@@ -1,0 +1,236 @@
+.newsletter-form  {
+    position: relative;
+    input:not([type="submit"]) {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.08);
+        height: 45px;
+        width: 100%;
+        border-radius: 22.5px;
+        padding-left: 30px;
+        border: 0px;
+        @include inputPlaceholder {
+            color: #b6b6b6;
+            font-size: rem(14px);
+        }
+    }
+    .send-button {
+        background-color: rgb(27, 209, 234);
+        position: absolute;
+        width: 51px;
+        height: 45px;
+        color: $color-white;
+        font-size: rem(18px);
+        right: -1px;
+        top: 0;
+        border: 0px;
+        border-radius: 0 22.5px 22.5px 0;
+        cursor: pointer;
+        @include transition;
+        &:hover {
+            background-color: $color-primary;
+        }
+    }
+    label {
+        margin-bottom: 0px;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+    }
+}
+
+.get-subscribe {
+    position: relative;
+    label {
+        margin-bottom: 0px;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+    }
+    .form-control {
+        height: 54px;
+        border: 2px solid #e7e7e7;
+        width: calc(100% - 190px);
+        border-radius: 27px;
+        padding-left: 35px;
+        margin-bottom: 15px;
+        &.error {
+            border-color: lighten($color: red, $amount: 15);
+        }
+        &:focus {
+            border-color: $color-primary;
+        }
+    }
+}
+
+.subscribe-form {
+    .form-group {
+		position: relative;
+		overflow: hidden;
+		box-shadow: 0px 10px 30px 0px rgba(23, 104, 221, 0.2);
+		margin-bottom: 0px;
+    }
+    .form-control,
+    .form-group {
+        border-radius: 25px;
+    }
+	label {
+		position: absolute;
+        bottom: -24px;
+        left: 0px;
+        margin-bottom: 0;
+        line-height: 1;
+	}
+	.form-control {
+		border: 1px solid #f5f5f5;
+		height: 50px;
+        padding-left: 25px;
+        &.error {
+            border-color: lighten($color: red, $amount: 15);
+        }
+	}
+	.sub-btn {
+		background-color: transparent;
+		border: 0px;
+		position: absolute;
+        top: 0;
+		right: 0;
+		padding-right: 25px;
+		cursor: pointer;
+		color: #1768dd;
+		height: 100%;
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.subscribe-from-style2 {
+    position: relative;
+    .form-group,
+    .form-control {
+        border-radius: 27px;
+    }
+    .form-control {
+        border-color: $color-primary;
+        height: 54px;
+        box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.1);
+        &.error {
+            border-color: lighten($color: red, $amount: 15);
+        }
+        @include inputPlaceholder() {
+            color: #cacaca;
+        }
+    }
+    .sub-btn {
+        padding: 0px;
+        @include equal-size-lineHeight(40px, $Lheight: 41px);
+        text-align: center;
+        background-color: $color-primary;
+        color: $color-white;
+        font-size: rem(16px);
+        right: 7px;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.1);
+        @include transition;
+        &:hover {
+            background-color: $color-secondary;
+        }
+        i {
+            margin-left: 2px;
+        }
+    }
+}
+
+.subscribe-form {
+    &.subscribe-from-style3 {
+        @extend .subscribe-from-style2;
+        .form-group {
+            box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.1);
+        }
+        .form-control {
+            border-color: #78d0e8;
+            &:focus {
+                border-color: darken($color: #78d0e8, $amount: 15);
+            }
+        }
+        .sub-btn {
+            background-color: #78d0e8;
+            box-shadow: none;
+        }
+    }
+    .subscirbe-info {
+        font-size: rem(15px);
+        color: $color-black;
+    }
+}
+
+.subscribe-style-border {
+    .form-group {
+        box-shadow: none;
+        border-radius: 0px;
+        .form-control {
+            border: 0px;
+            border-radius: 0px;
+            border-bottom: 2px solid #000;
+            padding-left: 20px;
+            @include transition;
+            &:focus {
+                border-color: $color-primary;
+            }
+            &.error {
+                &:focus {
+                    border-color: lighten($color: red, $amount: 10);
+                }
+            }
+            @include inputPlaceholder() {
+                color: #cacaca;
+                font-size: rem(13px);
+                letter-spacing: 1.5px;
+            }
+        }
+        .sub-btn {
+            padding-right: 20px;
+            font-size: rem(25px);
+            color: $color-black;
+        }
+    }
+}
+
+/* subscribe form */
+.subscribe-from-style4 {
+    .form-group , .form-control {
+        border-radius: 0px;
+    }
+    .form-group {
+        box-shadow: 0px 15px 65px 0px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    .form-control {
+        padding-left: 30px;
+        border: 1px solid #7447ff;
+        &:focus {
+            border-color: $color-primary;
+        }
+        @include inputPlaceholder() {
+            color: #e4e4e4;
+            font-size: rem(15px);
+        }
+    }
+    .sub-btn {
+        padding: 0 28px;
+        font-size: rem(20px);
+        color: #7447ff;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+            height: 24px;
+            width: 1px;
+            left: 0;
+            background-color: #e3daff;
+        }
+    }
+}

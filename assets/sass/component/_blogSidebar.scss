@@ -1,0 +1,197 @@
+.widget {
+    $padding: 40px;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .xs-title {
+        margin-bottom: 24px;
+        font-size: rem(24px);
+        font-weight: 500;
+        span {
+            color: #1bd1ea;
+        }
+    }
+    &:not(.widget-search) {
+        padding: {
+            top: $padding;
+            bottom: $padding;
+        }
+    }
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.07);
+    background-color: $color-white;
+    padding: {
+        left: ($padding - 10px);
+        right: ($padding - 10px);
+    }
+    &.widget-search {
+        padding: {
+            top: ($padding - 20px);
+            bottom: ($padding - 20px);
+        }
+    }
+    .list-group {
+        li {
+            font-size: rem(15px);
+            position: relative;
+            a , span {
+                color: $bColor;
+            }
+            span {
+                position: absolute;
+                right: 0px;
+            }
+            a {
+                @include transition;
+            }
+            a:hover {
+                color: $color-primary;
+            }
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &.widget-subscribe {
+        p {
+            margin-bottom: 26px;
+        }
+    }
+}
+.widget-posts {
+    .widget-post {
+        &:not(:last-child) {
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            @include my-border('bottom');
+        }
+        img {
+            padding-right: 20px;
+        }
+        .post-meta-date {
+            color: #d2d2d2;
+        }
+        .post-meta-date ,
+        .post-author {
+            font-size: rem(15px);
+        }
+        .media-body {
+            margin-top: -3px;
+        }
+        .entry-title {
+            font-size: rem(16px);
+            font-weight: 500;
+            margin-bottom: 0px;
+            font-family: $titleFont;
+            letter-spacing: -.25px;
+            a {
+                color: $color-black;
+                @include transition;
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+.tag-lists {
+    a {
+        display: inline-block;
+        padding: 6px 17px;
+        color: $bColor;
+        border: 1px solid #e7e7e7;
+        border-radius: 18.5px;
+        font-size: rem(15px);
+        margin-right: 9px;
+        margin-bottom: 9px;
+        @include transition;
+        &:hover {
+            color: $color-white;
+            background-color: $color-primary;
+            border-color: $color-primary;
+        }
+    }
+    .title {
+        color: $color-black;
+        padding-right: 15px;
+        font-weight: 700;
+    }
+}
+
+.widgetsub-form {
+    &.subscribe-form {
+        input:not([type="submit"]) {
+            border: 1px solid rgb(231, 231, 231);
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+            height: 48px;
+            padding-left: 30px;
+            margin-bottom: 10px;
+            @include transition;
+            &:focus {
+                border-color: $color-primary;
+            }
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: #cacaca;
+                font-size: rem(15px);
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                color: #cacaca;
+                font-size: rem(15px);
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                color: #cacaca;
+                font-size: rem(15px);
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+                color: #cacaca;
+                font-size: rem(15px);
+            }
+        }
+        .btn {
+            box-shadow: none;
+            border-radius: 5px;
+            background-color: $color-primary;
+            height: 50px;
+            font-size: rem(15px);
+            padding: 0 30px;
+            &:hover {
+                background-color: darken($color: $color-primary, $amount: 10);
+            }
+        }
+    }
+}
+
+.widget-banner {
+    a {
+        display: block;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.insta-feed2 {
+    li {
+        float: left;
+        display: inline-block;
+        width: calc(25% - 2px);
+        margin-right: 2px;
+        margin-bottom: 2px;
+        a {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            img {
+                @include transition;
+                transform: scale(1);
+            }
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

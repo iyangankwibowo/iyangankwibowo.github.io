@@ -1,0 +1,264 @@
+.blog-single-post {
+    .post-media {
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+        img {
+            transform: scale(1);
+            @include transition;
+        }
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+    .post-meta-list {
+        margin-bottom: 20px;
+    }
+    .post-body {
+        .entry-title {
+            color: #000000;
+            font-weight: 500;
+            margin-bottom: 22px;
+        }
+        .entry-conent {
+            margin-bottom: 60px;
+            p {
+                position: relative;
+                overflow: hidden;
+                font-size: rem(17px);
+                color: #777777;
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+                em {
+                    font-weight: 500;
+                }
+                img {
+                    margin-bottom: 15px;
+                    @include transition;
+                    transform: scale(1);
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                   +  em {
+                        text-align: center;
+                        display: block;
+                        font-weight: 400;
+                        color: #999999;
+                    }
+                }
+            }
+            a {
+                color: $color-primary;
+                text-decoration: underline;
+                &:hover {
+                    color: $color-secondary;
+                }
+            }
+            h3 {
+                margin-bottom: 25px;
+                color: $color-black;
+                font-weight: 600;
+                font-size: rem(22px);
+            }
+            blockquote {
+                margin-bottom: 40px;
+            }
+            .xs-list {
+                margin-bottom: 50px;
+                padding-left: 20px;
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            .order-list {
+                padding-left: 20px;
+                margin-bottom: 40px;
+                li {
+                    color: #777777;
+                    &::before {
+                        content: counter(step-counter)'.';
+                        width: auto;
+                        height: auto;
+                        line-height: normal;
+                        margin-right: 14px;
+                        border: 0px solid #000;
+                        color: #999999;
+                    }
+                }
+            }
+        }
+    }
+}
+blockquote {
+    background-color: $color-primary;
+    padding: 60px;
+    font-size: rem(22px);
+    font-family: $fontCursive;
+    color: $color-white;
+    font-style: italic;
+    font-weight: 700;
+    position: relative;
+    &::before {
+        content: '\e93b';
+        font-family: $iconFont2;
+        display: block;
+        font-size: rem(48px);
+        font-weight: 400;
+        font-style: normal;
+        float: left;
+        padding-right: 50px;
+        margin-top: 11px;
+    }
+}
+.post-footer {
+    margin-bottom: 60px;
+    .tag-lists {
+        margin-bottom: 25px;
+        .title {
+            font-weight: 400;
+        }
+    }
+    .social-list {
+        margin-bottom: 60px;
+        li {
+            a {
+                height: 50px;
+                line-height: 50px;
+                border-radius: 25px;
+                padding: 0 42px;
+            }
+        }
+    }
+}
+.realted-article {
+    h4 {
+        margin-bottom: 25px;
+    }
+}
+
+/* author card */
+.author-card {
+    padding: 60px 40px;
+    background-color: $color-white;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.07);
+    margin-bottom: 100px;
+    h4 {
+        margin-bottom: 25px;
+    }
+    .author-info {
+        .autho-img {
+            float: left;
+            overflow: hidden;
+            @include equal-size(80px);
+            border-radius: 50%;
+            margin-right: 30px;
+            + .author-details {
+                width: calc(100% - 110px);
+            }
+        }
+        .author-details {
+            float: right;
+            h5 {
+                color: $color-black;
+                font-size: rem(18px);
+                font-weight: 500;
+                margin-bottom: 10px;
+                a {
+                    padding-left: 15px;
+                    position: relative;
+                    display: inline-block;
+                    top: -2px;
+                    .badge {
+                        font-size: rem(13px);
+                        font-weight: 500;
+                        background-color: $color-primary;
+                        @include transition;
+                        &:hover {
+                            background-color: $color-secondary;
+                        }
+                    }
+                }
+            }
+            p {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+/* post navigation */
+.post-navigation {
+    margin-bottom: 100px;
+}
+.post-previous {
+    text-align: right;
+}
+.post-previous,
+.post-next {
+    padding: 60px 80px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    a {
+        display: block;
+        &:hover {
+            h4 {
+                color: $color-primary;
+            }
+            .indicator-icon {
+                color: $color-primary;
+            }
+        }
+    }
+    span {
+        display: block;
+        font-size: rem(13px);
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        margin-bottom: 22px;
+    }
+    h4 {
+        font-family: $bodyFont;
+        font-weight: 500;
+        margin-bottom: 4px;
+        @include transition;
+    }
+    small {
+        font-size: rem(13px);
+    }
+    .indicator-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: rem(36px);
+        color: $color-black;
+        @include transition;
+    }
+}
+.post-previous {
+    border-left: 0px;
+    .indicator-icon {
+        left: 40px;
+    }
+}
+.post-next {
+    border-left: 0px;
+    border-right: 0px;
+    .indicator-icon {
+        right: 40px;
+    }
+}
+
+.relatednews-wraper {
+    margin-bottom: 70px;
+    h4 {
+        margin-bottom: 35px;
+    }
+}
+
+/*========== Post meta list ==================*/
+@import '../element/_postMeta.scss';

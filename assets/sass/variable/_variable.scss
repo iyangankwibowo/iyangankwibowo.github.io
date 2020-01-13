@@ -1,0 +1,45 @@
+// default color set
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-gray: #f9f9f9;
+$color-orange: #ffa801;
+$color-gold: #fed700;
+$color-yellow: #ffd200;
+$color_semi_black: #333e48;
+
+// social color
+$color-facebook: #4969a8;
+$color-twitter: #2aa3ef;
+$color-dribbble: #ea4c89;
+$color-pinterest: #bd081c;
+$color-instagram: #e8715c;
+$color-google-plus: #dc4a38;
+$color-linkedin: #1178b3;
+
+// body var
+$iconFont: 'FontAwesome';
+$iconFont2: 'iconfont';
+
+// primary and secondary color list
+$color-primary: #1868dd; // Navy Blue
+$color-secondary: #103dbe; // Limerick
+$color-ternary: #21069b;
+
+// body var
+$bodyFont: 'Roboto', sans-serif;
+$titleFont: 'Work Sans', sans-serif;
+$fontCursive: 'Playfair Display', serif;
+$bodyFontWeight: 400;
+$bColor: #999999;
+$bfSize: 16px;
+$blineHeight: 26px / $bfSize;
+
+@function rem($pixels, $context: $bfSize) {
+	@if (unitless($pixels)) {
+		$pixels: $pixels * 1px;
+	}
+	@if (unitless($context)) {
+		$context: $context * 1px;
+	}
+	@return $pixels / $context * 1rem;
+}

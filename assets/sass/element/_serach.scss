@@ -1,0 +1,76 @@
+.xs-serach {
+    position: relative;
+    input:not([type="submit"]) {
+        padding: 0 30px;
+        background-color: #f7f7f7;
+        width: 100%;
+        height: 54px;
+        border-radius: 5px;
+        border: 0px;
+        border: 1px solid transparent;
+        @include transition;
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #d2d2d2;
+            font-size: rem(15px);
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+            color: #d2d2d2;
+            font-size: rem(15px);
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+            color: #d2d2d2;
+            font-size: rem(15px);
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+            color: #d2d2d2;
+            font-size: rem(15px);
+        }
+        &:focus {
+            border-color: $color-primary;
+        }
+    }
+    .search-btn {
+        width: 62px;
+        border: 0px;
+        font-size: rem(18px);
+        color: $color-primary;
+        background-color: transparent;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 100%;
+        cursor: pointer;
+        @include transition;
+    }
+    &.style2 {
+        input:not([type=submit]) {
+            background-color: transparent;
+            border-color: #e7e7e7;
+            height: 44px;
+            padding: 0 20px;
+            &:focus {
+                border-color: $color-primary;
+            }
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: #777777;
+                font-size: rem(14px);
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                color: #777777;
+                font-size: rem(14px);
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                color: #777777;
+                font-size: rem(14px);
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+                color: #777777;
+                font-size: rem(14px);
+            }
+        }
+        .search-btn {
+            color: #777777;
+            font-size: rem(14px);
+        }
+    }
+}

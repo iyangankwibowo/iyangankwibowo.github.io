@@ -1,0 +1,22 @@
+.about-info {
+    padding-left: 95px;
+    .section-title {
+        font-size: rem(30px);
+        font-weight: 600;
+        margin-bottom: 25px;
+        color: $color-black;
+    }
+}
+
+.list-group {
+    .simple-social-list {
+        li {
+            &:not(:last-child) {
+                margin-right: 14px;
+            }
+            a {
+                font-size: rem(14px);
+            }
+        }
+    }
+}

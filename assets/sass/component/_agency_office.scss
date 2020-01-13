@@ -1,0 +1,60 @@
+.agency-office-area {
+    .agency-section-title.text-center {
+        margin-bottom: 30px;
+    }
+    &.xs-section-padding {
+        padding-bottom: 70px;
+    }
+}
+
+.agency-office-slider {
+    .owl-stage-outer {
+        padding: 50px 0;
+    }
+    .owl-nav {
+        button {
+            &.owl-next ,
+            &.owl-prev {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 1;
+                font-size: rem(30px);
+                color: $color-black;
+                display: block;
+                @include equal-size-lineHeight(60px, $Lheight: 63px);
+                border-radius: 100%;
+                background-color: $color-white;
+                @include transition;
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-black;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            &.owl-next {
+                right: 30px;
+            }
+            &.owl-prev {
+                left: 30px;
+            }
+        }
+    }
+}
+
+.agency-office-single {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.2); 
+    &:hover {
+        img {
+            transform: scale(1.05);
+        }
+    }
+    img {
+        @include transition;
+        transform: scale(1);
+    }
+}

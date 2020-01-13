@@ -1,0 +1,104 @@
+.single-info-block {
+    @include transition;
+    padding: 70px 30px;
+    min-height: 366px;
+    background-color: $color-white;
+    &:hover ,
+    &.active {
+        box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.1);
+    }
+    .info-header {
+        margin-bottom: 25px;
+    }
+    .small {
+        font-weight: 700;
+        margin-bottom: 30px;
+        font-size: rem(18px);
+    }
+}
+
+
+/* bussiness info area */
+
+.business-info-area {
+    // margin-bottom: 85px;
+    padding: {
+        top: 70px;
+        // bottom: 30px;
+        bottom: 115px;
+    };
+}
+
+.business-info-and-history {
+    background-repeat: no-repeat;
+    background-position: top 127px center;
+    .success-history2-area {
+        padding-bottom: 30px;
+    }
+}
+
+.info-block-style2 {
+    .single-info-block {
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        padding: 75px 40px;
+        .small {
+            font-size: rem(22px);
+            margin-bottom: 22px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        .simple-btn ,
+        .simple-btn i {
+            background: linear-gradient(90deg, rgba(255,143,30,1) 0%, rgba(255,143,30,1) 50%, rgba(254,105,11,1) 100%);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            color: rgb(255,143,30);
+        }
+        .simple-btn {
+            font-weight: 400;
+        }
+        .leaf {
+            position: absolute;
+            filter: blur(24.7px);
+            z-index: -1;
+            &.leaf-1 {
+                top: 0;
+                left: 0;
+            }
+            &.leaf-2 {
+                bottom: 0;
+                left: 0;
+            }
+            &.leaf-3 {
+                top: 50px;
+                right: 0;
+            }
+        }
+    }
+}
+
+/* business info area doodle parallax */
+.business-info-area {
+    position: relative;
+    .doodle-parallax {
+        .single-doodle {
+            position: absolute;
+            pointer-events: none;
+            &.one {
+                top: 0;
+                left: 0;
+            }
+            &.two {
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+.business-info-area2 {
+    margin-bottom: 0px;
+}

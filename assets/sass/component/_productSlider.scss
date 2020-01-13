@@ -1,0 +1,35 @@
+.single-product-slider {
+    .product-header {
+        min-height: 600px;
+        border-radius: 0px;
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.product-slider {
+    position: relative;
+    .owl-dots {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        width: 100%;
+        .owl-dot {
+            span {
+                background-color: rgba($color: $color-black, $alpha: 0.149);
+                transform-origin: center center;
+                transform: scale(1);
+                &::before {
+                    display: none;
+                }
+            }
+            &.active {
+                span {
+                    background-color: rgba($color: $color-black, $alpha: .5);
+                    transform: scale(1.9);
+                }
+            }
+        }
+    }
+}

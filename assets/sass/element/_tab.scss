@@ -1,0 +1,31 @@
+/* bootstrap tab default style remove */ 
+.nav-tabs {
+	border-bottom: 0px;
+	.nav-item {
+		.nav-link {
+			padding: 0px;
+			border: 0px;
+		}
+	}
+}
+
+.main-tab {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #f7f7f7;
+    .nav-item {
+        &:not(:last-child) {
+            margin-right: 55px;
+        }
+        .nav-link {
+            padding-bottom: 23px;
+            border-bottom: 1px solid transparent;
+            color: #cacaca;
+            font-size: rem(18px);
+            font-weight: 500;
+            &.active {
+                border-color: currentColor;
+                color: $color-black;
+            }
+        }
+    }
+}

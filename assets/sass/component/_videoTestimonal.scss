@@ -1,0 +1,28 @@
+.video-testimonial-wraper {
+    padding-bottom: 190px;
+}
+
+.video-testimonial-area {
+    background-color: #e8fcfc;
+    padding-top: 90px;
+    padding-bottom: 230px;
+    + .testimonial-video-section {
+        margin-top: -178px;
+        position: relative;
+        z-index: 2;
+    }
+}
+.client-best-comments {
+    .best-comment-title {
+        font-family: $bodyFont;
+        font-size: rem(36px);
+        letter-spacing: .3px;
+        font-weight: 500;
+        line-height: 1.3888;
+        margin-bottom: 15px;
+    }
+    p {
+        color: $color-black;
+        font-size: rem(18px);
+    }
+}

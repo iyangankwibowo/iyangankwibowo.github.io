@@ -1,0 +1,15 @@
+.business-agenda-list {
+    padding-left: 65px;
+}
+.single-business-agenda {
+    &:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    .business-agenda-img {
+        padding-right: 20px;
+    }
+    .agenda-title {
+        font-size: rem(18px);
+        margin-bottom: 13px;
+    }
+}

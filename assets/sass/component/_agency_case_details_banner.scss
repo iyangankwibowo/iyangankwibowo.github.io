@@ -1,0 +1,47 @@
+.case-details-banner {
+    background-color: #00a39a;
+    min-height: 800px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.case-details-banner-content {
+    .agency-banner-content {
+        margin-bottom: 30px;
+        .watermark-title {
+            color: $color-white;
+            opacity: .2;
+            top: -126px;
+        }
+    }
+    .banner-title {
+        margin-bottom: 2px;
+    }
+    p {
+        margin-bottom: 0px;
+    }
+    .case-info-list {
+        margin-bottom: 30px;
+    }
+}
+.case-details-image {
+    position: relative;
+    > img {
+        box-shadow: 0px -10px 30px 0px rgba(0, 0, 0, 0.1);          
+    }
+    .watermark-title {
+        color: #000000;
+        opacity: .2;
+        font-size: rem(150px);
+        font-weight: 500;
+        left: -24px;
+        top: 10px; 
+    }
+}
+
+.banner-video-popups {
+    position: relative;
+    z-index: 2;
+}

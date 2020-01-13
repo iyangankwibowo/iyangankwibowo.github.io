@@ -1,0 +1,660 @@
+/*
+Author: XpeedStudio
+Author URI: http://themeforest.net/user/XpeedStudio/portfolio
+*/
+/* ==========================================================================
+   Author's custom styles
+========================================================================== */
+
+/*****************
+
+------------------------------- Table Of Content  ------------------------------------
+
+1. Nav
+2. Modal
+3. Modal Flag
+4. Modal Search
+5. Offset Cart
+6. Offset info bar
+7. Offset side bar
+8. preloader
+9. social list
+
+==================================== agency content ============================
+
+10. agency banner
+11. agency feature box
+12. intro video section
+13. creative comunication
+14. parallax area
+15. portfolio slider
+16. testimonial review
+17. blog thumb post
+18. client slider
+19. footer
+
+==================================== inner page start =========================
+
+20. inner page banner
+21. counter up timer
+22. team content
+23. centerd timeline
+24. office environment
+25. service block
+26. contact us block
+27. agency cases
+28. agency case details banner
+29. agency case details about
+30. agency project brief
+31. agency working progress
+32. agency call to action
+33. agency pricing
+34. agency contact
+35. blog list
+36. blog sidebar
+37. blog single
+38. comment area
+39. comment form
+40. parallax service
+41. shop
+42. product slider
+43. single shop
+44. product details
+45. info block
+46. about summary
+47. success summary
+48. call to action
+49. testimonials
+50. get subscribe
+51. deserve it
+52. we offer
+53. more feature
+54. bussiness agenda
+55. best quote
+56. about
+57. horizontal timeline
+58. get benifits
+59. awards
+60. growth card
+61. creative protfolio
+62. video testimonial
+63. office info
+64. feature step
+65. customer satisfiction
+66. vertical slider
+67. icon menu
+
+=================================== elemnt content ==============================
+
+1. btn element
+2. section title element
+3. list element
+4. video pop up element
+5. insta feed element
+6. newsletter element
+7. pagination
+8. select
+9. search
+10. product filter content
+11. ribbon
+12. offer promotion banner
+13. custom number
+14. floating buttons
+15. woocommerce star rating
+16. help tips
+17. woo reviews
+18. tabs
+19. about slider
+20. pie chart
+21. scroll to bottom
+22. content over image
+23. vertical tabs
+24. material style input
+25. humburger
+26. video testimonial
+27. shuffle title
+28. offcanvas menu
+29. inheritance element
+
+
+
+=====================================================**************************/
+
+//variable
+@import 'variable/_variable.scss';
+//function
+@import 'function/_function.scss';
+ // mixin
+@import 'mixin/_mixin.scss';
+
+/*=================================================
+          body reset file
+===============================================*/
+@import 'reset/_predefine.scss';
+
+/*=================================================
+          1. Nav
+===============================================*/
+@import 'component/_nav.scss';
+
+/*=================================================
+          2. Modal
+===============================================*/
+@import 'component/_modal.scss';
+
+/*=================================================
+          3. Modal Flag
+===============================================*/
+@import 'component/_modal-flag.scss';
+
+/*=================================================
+          4. Modal Search
+===============================================*/
+@import 'component/_modal-search.scss';
+
+/*=================================================
+          5. Offset Cart
+===============================================*/
+@import 'component/_offsetCart.scss';
+
+/*=================================================
+          6. Offset info bar
+===============================================*/
+@import 'component/_offsetInfoBar.scss';
+
+/*=================================================
+          7. Offset side bar
+===============================================*/
+@import 'component/_offsetSidebar.scss';
+
+/*=================================================
+          8. preloader
+===============================================*/
+@import 'element/_preloader.scss';
+
+/*=================================================
+          9. social list
+===============================================*/
+@import 'element/_socialList.scss';
+
+/*=================================================
+          10. agency banner
+===============================================*/
+@import 'component/_agencyBanner.scss';
+
+/*=================================================
+          11. agency feature box
+===============================================*/
+@import 'component/_agency_feature_box.scss';
+
+/*=================================================
+          12. intro video section
+===============================================*/
+@import 'component/_agency_intro.scss';
+
+/*=================================================
+          13. creative comunication
+===============================================*/
+@import 'component/_agency_cc.scss';
+
+/*=================================================
+          14. parallax area
+===============================================*/
+@import 'component/_agency_parallax_area.scss';
+
+/*=================================================
+          15. portfolio slider
+===============================================*/
+@import 'component/_agency_portfolio.scss';
+
+/*=================================================
+          16. testimonial review
+===============================================*/
+@import 'component/_agency_review.scss';
+
+/*=================================================
+          17. blog thumb post
+===============================================*/
+@import 'component/_agency_blog.scss';
+
+/*=================================================
+          18. client slider
+===============================================*/
+@import 'component/_clients.scss';
+
+/*=================================================
+          19. footer
+===============================================*/
+@import 'component/_agency_footer.scss';
+
+/*=================================================
+          20. inner page banner
+===============================================*/
+@import 'component/_agency_inner_page_banner.scss';
+
+/*=================================================
+          21. counter up timer
+===============================================*/
+@import 'component/_agency_counterup.scss';
+
+/*=================================================
+          22. team content
+===============================================*/
+@import 'component/_agency_single_team.scss';
+
+/*=================================================
+          23. centerd timeline
+===============================================*/
+@import 'component/_agency_timeline.scss';
+
+/*=================================================
+          24. office environment
+===============================================*/
+@import 'component/_agency_office.scss';
+
+/*=================================================
+          25. service block
+===============================================*/
+@import 'component/_service_block.scss';
+
+/*=================================================
+          26. contact us block
+===============================================*/
+@import 'component/_contactUs_block.scss';
+
+/*=================================================
+          27. agency cases
+===============================================*/
+@import 'component/_agency_cases.scss';
+
+/*=================================================
+          28. agency case details banner
+===============================================*/
+@import 'component/_agency_case_details_banner.scss';
+
+/*=================================================
+          29. agency case details about
+===============================================*/
+@import 'component/_agency_case_details_about.scss';
+
+/*=================================================
+          30. agency project brief
+===============================================*/
+@import 'component/_project_brief.scss';
+
+/*=================================================
+          31. agency working progress
+===============================================*/
+@import 'component/_agency_progress.scss';
+
+/*=================================================
+          32. agency call to action
+===============================================*/
+@import 'component/_agency_calltoaction.scss';
+
+/*=================================================
+          33. agency pricing
+===============================================*/
+@import 'component/_pricing.scss';
+
+/*=================================================
+          34. agency contact
+===============================================*/
+@import 'component/_contact.scss';
+
+/*=================================================
+          35. blog list
+===============================================*/
+@import 'component/_blogList.scss';
+
+/*=================================================
+          36. blog sidebar
+===============================================*/
+@import 'component/_blogSidebar.scss';
+
+/*=================================================
+          37. blog single
+===============================================*/
+@import 'component/_blog-single.scss';
+
+/*=================================================
+          38. comment area
+===============================================*/
+@import 'component/_commentsArea.scss';
+
+/*=================================================
+          39. comment form
+===============================================*/
+@import 'component/_coomentFrom.scss';
+
+/*=================================================
+          40. parallax service
+===============================================*/
+@import 'component/_parallax-service.scss';
+
+/*=================================================
+          41. shop
+===============================================*/
+@import 'component/_shop.scss';
+
+/*=================================================
+          42. product slider
+===============================================*/
+@import 'component/_productSlider.scss';
+
+/*=================================================
+          43. single shop
+===============================================*/
+@import 'component/_singleShop.scss';
+
+/*=================================================
+          44. product details
+===============================================*/
+@import 'component/_productDetails.scss';
+
+/*=================================================
+          45. info block
+===============================================*/
+@import 'component/_infoBlock.scss';
+
+/*=================================================
+          46. about summary
+===============================================*/
+@import 'component/_aboutSummary.scss';
+
+/*=================================================
+          47. success summary
+===============================================*/
+@import 'component/_successSummary.scss';
+
+/*=================================================
+          48. call to action
+===============================================*/
+@import 'component/_callToActions.scss';
+
+/*=================================================
+          49. testimonials
+===============================================*/
+@import 'component/_testimonials.scss';
+
+/*=================================================
+          50. get subscribe
+===============================================*/
+@import 'component/_getSubscribe.scss';
+
+/*=================================================
+          51. deserve it
+===============================================*/
+@import 'component/_deserveIt.scss';
+
+/*=================================================
+          52. we offer
+===============================================*/
+@import 'component/_weOffer.scss';
+
+/*=================================================
+          53. more feature
+===============================================*/
+@import 'component/_moreFeature.scss';
+
+/*=================================================
+          54. bussiness agenda
+===============================================*/
+@import 'component/_businessAgenda.scss';
+
+/*=================================================
+          55. best quote
+===============================================*/
+@import 'component/_bsetQuote.scss';
+
+/*=================================================
+          56. about
+===============================================*/
+@import 'component/_about';
+
+/*=================================================
+          57. horizontal timeline
+===============================================*/
+@import 'component/_hrTimeline';
+
+/*=================================================
+          58. get benifits
+===============================================*/
+@import 'component/_getBenifits';
+
+/*=================================================
+          59. awards
+===============================================*/
+@import 'component/_awards';
+
+/*=================================================
+          60. growth card
+===============================================*/
+@import 'component/_growthCard';
+
+/*=================================================
+          61. creative protfolio
+===============================================*/
+@import 'component/_creativeProfolio';
+
+/*=================================================
+          62. video testimonial
+===============================================*/
+@import 'component/_videoTestimonal';
+
+/*=================================================
+          63. office info
+===============================================*/
+@import 'component/_officeInfo';
+
+/*=================================================
+          64. feature step
+===============================================*/
+@import 'component/_feaureStep';
+
+/*=================================================
+          65. customer satisfiction
+===============================================*/
+@import 'component/_customerSatisfiction';
+
+/*=================================================
+          66. vertical slider
+===============================================*/
+@import 'component/_verticalSlider';
+
+/*=================================================
+          67. icon menu
+===============================================*/
+@import 'component/iconMenu';
+
+/*=================================================
+          68. portfolio banner
+===============================================*/
+@import 'component/portfolioBanner';
+
+/*=================================================
+          69. portfolio aboout
+===============================================*/
+@import 'component/portfolioAbout';
+
+/*=================================================
+          70. service boxed
+===============================================*/
+@import 'component/_serviceBoxed';
+
+/*=================================================
+          71. blog post
+===============================================*/
+@import 'component/_blogPost';
+
+/*=================================================
+          72. portfolio testimonial
+===============================================*/
+@import 'component/_portfolioTestimonial';
+
+/*=================================================== page element ===============================*/
+
+/*=================================================
+          1. btn element
+===============================================*/
+@import 'element/_btn.scss';
+
+/*=================================================
+          2. section title element
+===============================================*/
+@import 'element/_section_title.scss';
+
+/*=================================================
+          3. list element
+===============================================*/
+@import 'element/_list.scss';
+
+/*=================================================
+          4. video pop up element
+===============================================*/
+@import 'element/_video_popup.scss';
+
+/*=================================================
+          5. insta feed element
+===============================================*/
+@import 'element/_insta_feed.scss';
+
+/*=================================================
+          6. newsletter element
+===============================================*/
+@import 'element/_newsletter_form.scss';
+
+/*=================================================
+          7. pagination
+===============================================*/
+@import 'element/_pagination.scss';
+
+/*=================================================
+          8. select
+===============================================*/
+@import 'element/_select.scss';
+
+/*=================================================
+          9. search
+===============================================*/
+@import 'element/_serach.scss';
+
+/*=================================================
+          10. product filter content
+===============================================*/
+@import 'element/_product_filter.scss';
+
+/*=================================================
+          11. ribbon
+===============================================*/
+@import 'element/_ribbon.scss';
+
+/*=================================================
+          12. offer promotion banner
+===============================================*/
+@import 'element/_offerPromotionBanner.scss';
+
+/*=================================================
+          13. custom number
+===============================================*/
+@import 'element/_customNumber.scss';
+
+/*=================================================
+          14. floating buttons
+===============================================*/
+@import 'element/_floatingBtns.scss';
+
+/*=================================================
+          15. woocommerce star rating
+===============================================*/
+@import 'element/_woocommerceStarRating.scss';
+
+/*=================================================
+          16. help tips
+===============================================*/
+@import 'element/_helpTip.scss';
+
+/*=================================================
+          17. woo reviews
+===============================================*/
+@import 'element/_wooReviews.scss';
+
+/*=================================================
+          18. tabs
+===============================================*/
+@import 'element/_tab.scss';
+
+/*=================================================
+          19. about slider
+===============================================*/
+@import 'element/_aboutSlider.scss';
+
+/*=================================================
+          20. pie chart
+===============================================*/
+@import 'element/_pieChart.scss';
+
+/*=================================================
+          21. scroll to bottom
+===============================================*/
+@import 'element/_scrollToBottom.scss';
+
+/*=================================================
+          22. content over image
+===============================================*/
+@import 'element/_contentOverImage';
+
+/*=================================================
+          23. vertical tabs
+===============================================*/
+@import 'element/_verticalTabs';
+
+/*=================================================
+          24. material style input
+===============================================*/
+@import 'element/_inputMaterial';
+
+/*=================================================
+          25. humburger
+===============================================*/
+@import 'element/_humburger';
+
+/*=================================================
+          26. video testimonial
+===============================================*/
+@import 'element/_videoTesimonial';
+
+/*=================================================
+          27. shuffle title
+===============================================*/
+@import 'element/_shuffleTitle';
+
+/*=================================================
+          28. offcanvas menu
+===============================================*/
+@import 'element/_offCanvasMenu';
+
+/*=================================================
+          29. progress bars
+===============================================*/
+@import 'element/_progressbar';
+
+/*=================================================
+          30. progress bars
+===============================================*/
+@import 'element/dropCap';
+
+/*=================================================
+          31. long arrow
+===============================================*/
+@import 'element/_longArrow';
+
+/*=================================================
+          32. back to top
+===============================================*/
+@import 'element/_backtotop';
+
+/*=================================================
+          29. inheritance element
+===============================================*/
+@import 'reset/_inheritance.scss';

@@ -1,0 +1,115 @@
+.input-material {
+    .form-group {
+        position: relative;
+        margin-bottom: 37px;
+    }
+    .bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #e5e5e5;
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 0%;
+            height: 100%;
+            background-color: $color-ternary;
+            @include transition;
+        }
+    }
+    .placeholder-title {
+        position: absolute;
+        left: 0;
+        pointer-events: none;
+        top: 50%;
+        color: #919191;
+        display: inline-block;
+        padding-left: 15px;
+        transform: translateY(-50%);
+        @include transition;
+    }
+    input:not([type="submit"]),
+    textarea {
+        background-color: transparent;
+        border: 0px;
+        border-radius: 0px;
+        padding-left: 15px;
+        margin-bottom: 0px;
+        &:focus ,
+        &.active {
+            + .placeholder-title {
+                transform: translateY(-130%);
+                padding-left: 0px;
+                font-size: rem(14px);
+            }
+            ~ .bar {
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+        &.invaild {
+            ~ .bar {
+                &::before {
+                    background-color: lighten($color: red, $amount: 15);
+                }
+            }
+            + .placeholder-title {
+                color: lighten($color: red, $amount: 15);
+            }
+        }
+    }
+    textarea {
+        height: 60px;
+        + .placeholder-title {
+            top: 0;
+            transform: translateX(0px);
+        }
+        &:focus ,
+        &.active {
+            + .placeholder-title {
+                transform: translateY(-100%);
+            }
+        }
+        &:focus {
+            background-color: transparent;
+        }
+    }
+    &.material-style2 {
+        .form-group {
+            margin-bottom: 50px;
+        }
+        input {
+            &:not([type="submit"]) {
+                color: $color-white;
+                padding-left: 30px;
+            }
+        }
+        .placeholder-title {
+            color: rgba($color: $color-white, $alpha: .5);
+            font-size: rem(15px);
+            padding-left: 30px;
+        }
+        .bar {
+            background-color: rgba($color: $color-white, $alpha: .07);
+            height: 2px;
+            &::before {
+                background-color: $color-white;
+            }
+        }
+        textarea {
+            height: 145px;
+            color: $color-white;
+        }
+    }
+}
+
+.portfolio-contact-area {
+    &.dark-bg {
+        background-color: #333333;
+    }
+}
