@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Agroforestcape</title>
+		<link rel="shortcut icon" href="../img/asset/logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="../css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="../css/theme-purple.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+		<!-- Description -->
+		<meta name="description" content="Program untuk mempopulerkan agroforestri di Indonesia<br> 
+		berbasis teknologi blockchain sebagai solusi masa depan<br>
+		pemanfaatan lahan integratif dalam rangka mewujudkan 
+		target kedaulatan pangan dan kelestarian lingkungan.">
+		<meta name="author" content="agroforestcape.id">
+
+		<!-- mobile specific metas
+		================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		
+		<!-- favicons
+		================================================== -->
+		<link rel="shortcut icon" href="../img/faviconCircle.png" type="image/x-icon">
+		<link rel="icon" href="../img/faviconCircle.png" type="image/x-icon">
+		<!-- Owl Carousel -->
+		<link type="text/css" rel="stylesheet" href="../css/owl.carousel.css" />
+		<link type="text/css" rel="stylesheet" href="../css/owl.theme.default.css" />
+
+		<!-- Magnific Popup -->
+		<link type="text/css" rel="stylesheet" href="../css/magnific-popup.css" />
+		<!-- Auto Clear Cache
+		================================================== -->
+		<meta http-equiv="cache-control" content="max-age=0, private, no-store, must-revalidate" />
+		<meta http-equiv="Expires" content="0" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="Refresh" content="1500; URL=form.html">
+		<meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'none'">
+	</head>
+	<body>
+		<div class="nav-container image-bg">
+			<nav id="nav" class="absolute transparent">
+		        <div class="nav-bar no-line">
+		            <div class="module left">
+		                <a href="/">
+		                    <img class="image-xs logo logo-light" alt="Logo" src="../img/asset/logoweb.png" style="width: 180px; height: 35px;">
+		                    <img class="image-xs logo logo-dark" alt="Logo" src="../img/asset/logoweb.png" style="width: 180px; height: 35px;">
+		                </a>
+		            </div>
+		            <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+		                <i class="ti-menu"></i>
+		            </div>
+		            <div class="module-group right">
+		                <div class="module left">
+		                    <ul class="menu main-nav">
+		                        <li>
+		                            <a href="#home">Beranda</a>
+								</li>
+								<li>
+									<a href="#tentang">Tentang Kami</a>
+								</li>
+                                <li>
+		                            <a href="#fitur">Fitur</a>
+		                        </li>
+		                        <li class="has-dropdown">
+		                            <a href="#peran">
+		                                Peran Kami
+		                            </a>
+		                            <ul>
+									<li><a href="#peran">Growers</a></li>
+									<li><a href="#peran">Logistics</a></li>
+									<li><a href="#peran">Brokers</a></li>
+		                            </ul>
+		                        </li>
+                                <li>
+		                            <a href="#kontak">Kontak Kami</a>
+								</li>
+								<li>
+									<a class="btn btn-sm btn-rounded" href="#">
+										Login
+									</a>
+								</li>
+		                    </ul>
+		                </div>
+		            </div>
+		            
+		        </div>
+		    </nav>
+        </div>
+
+		<main class="py-4" >
+			<div class="main-container">
+				<section class="image-bg" id="home" style="padding-top: 240px; padding-bottom: 300px">
+					<div class="background-image-holder">
+						<img alt="image" class="background-image" src="../img/asset/home.png"/>
+					</div>
+					<div class="container">
+						<div class="row">
+							<p class="welcome">
+								<strong>Kedaulatan Pangan</strong> dan
+								<br><strong>Kelestarian Lingkungan</strong> Indonesia
+							</p><br>
+							<p class="sub">
+								Paradigma baru pengembangan agroforestri berbasis teknologi <i> blockchain </i><br>
+								untuk meningkatkan efisensi dan efektivitas rantai pasok usaha.
+							</p>
+							<a class="btn btn-rounded" href="#">Pelajari Selengkapnya</a>
+						</div>
+					</div>
+					<!--end of container-->
+				</section>
+
+				<section class="pt0 pb0" id="tentang">
+					<div class="container">
+						<div class="row row-gapless masonry masonryFlyIn">
+							<div class="col-md-5 col-md-offset-1 col-md-push-1 col-sm-6 mt-sm-80 mt-xs-0 masonry-item project">
+								<p class="sec2">
+									Apa itu<br> 
+									<strong>Agroforestcape?</strong>
+								</p>
+								<p class="sec2-desc">
+									<i>Agroforestcape (Agroforestry Landscape)</i> adalah program<br>
+									untuk mempopulerkan agroforestri di Indonesia berbasis<br>
+									teknologi <strong><i>blockchain</i></strong> sebagai solusi masa depan<br>
+									pemanfaatan lahan integratif dalam rangka mewujudkan<br>
+									target <strong>kedaulatan pangan</strong> dan <strong>kelestarian lingkungan</strong>.
+								</p>
+								<p class="sec2-desc">
+									Penerapan <i>Agroforestcape</i> dapat diimplementasikan dengan<br>
+									penggunaan komposisi tanaman sengon buto, jati, lamtoro,<br>
+									bakau, lada, padi, sagu dan ubi kayu melalui 3 pola penanaman<br>
+									yaitu <strong>2D (Two-Dimensional)</strong>,<strong>3D (Three-Dimensional)</strong> dan<br>
+									<strong>4D (Four-Dimensional)</strong> agroforestri.
+								</p>
+								<p class="sec2-desc">
+									Penggunaan teknologi <strong><i>blockchain</i></strong> pada <i>Agroforestcape</i><br>
+									ditujukan untuk membuat pengaturan <strong>rantai pasok</strong> kegiatan<br>
+									usaha agroforestri dapat berjalan secara efisien dan efektif.
+								</p>
+							</div>
+							<div class="col-md-6 col-sm-5 text-center mb-xs-24 masonry-item project">
+								<div class="local-video-container">
+									<div class="background-image-holder">
+										<img alt="Background Image" class="background-image" src="../img/home3.jpg">
+									</div>
+									<video controls="">
+										<source src="../video/video.webm" type="video/webm">
+										<source src="../video/video.mp4" type="video/mp4">
+										<source src="../video/video.ogv" type="video/ogg">
+									</video>
+									<div class="play-button"></div>
+								</div>
+							</div>
+						</div>
+						<!--end of row-->
+					</div>
+					<!--end of container-->
+				</section>
+
+				<section class="image-bg" id="fitur" style="padding-top: 180px; padding-bottom: 240px">
+					<div class="background-image-holder">
+						<img alt="image" class="background-image" src="../img/asset/body.jpg" 
+						style="display: none; background-size: cover; background-repeat: no-repeat;
+						background-position: center center; margin: auto;
+						min-width: 50%; min-height: 50%;"/>
+					</div>
+					<div class="container">
+						<div class="row" align="center">
+							<p class="sec3 text-center">
+								Fitur yang Tersedia di<br>
+								<strong>Agroforestcape</strong>
+							</p><br>
+						</div>
+						<!--end of row-->
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="about">
+									<div class="text-center">
+										<i class="fa fa-database icon" style="color:#74b23d; line-height: 1.5"></i>
+										<h5 class="uppercase bold mb16" style="color:#74b23d;">Manajemen Stok</h5>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="about">
+									<div class="text-center">
+										<i class="fa fa-chain icon" style="color:#74b23d; line-height: 1.5"></i>
+										<h5 class="uppercase bold mb16" style="color:#74b23d;">Pelacakan Rantai Pasok</h5>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="about">
+									<div class="text-center">
+										<i class="fa fa-truck icon" style="color:#74b23d; line-height: 1.5"></i>
+										<h5 class="uppercase bold mb16" style="color:#74b23d;">Otomatisasi Logistik</h5>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="about">
+									<div class="text-center">
+										<i class="fa fa-users icon" style="color:#74b23d; line-height: 1.5"></i>
+										<h5 class="uppercase bold mb16" style="color:#74b23d;">Integrasi Pedagang Perantara</h5>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="about">
+									<div class="text-center">
+										<i class="fa fa-location-arrow icon" style="color:#74b23d; line-height: 1.5"></i>
+										<h5 class="uppercase bold mb16" style="color:#74b23d;">Traceability (Lacak-Balak)</h5>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="about">
+									<div class="text-center">
+										<i class="fa fa-line-chart icon" style="color:#74b23d; line-height: 1.5"></i>
+										<h5 class="uppercase bold mb16" style="color:#74b23d;">Distance Tracking and<br>Trip Mapping</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--end of row-->
+					</div>
+					<!--end of container-->
+				</section>
+
+				<section class="pt0" id="peran">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12 col-md-offset-4">
+								<p class="sec4">Siapa saja yang <strong>berperan?</strong></p>
+							</div>
+						</div>
+						<!--end of row-->
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="feature feature-1">
+									<div class="text-center">
+										<img alt="image" class="img-responsive pb-xs-40" src="../img/asset/grower2.png"><br>
+										<a class="btn btn-lg btn-rounded" href="#">Growers</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="feature feature-1">
+									<div class="text-center">
+										<img alt="image" class="img-responsive pb-xs-40" src="../img/asset/logistic2.png"><br>
+										<a class="btn btn-lg btn-rounded" href="#">Logistics</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="feature feature-1">
+									<div class="text-center">
+										<img alt="image" class="img-responsive pb-xs-40" src="../img/asset/broker2.png"><br>
+										<a class="btn btn-lg btn-rounded" href="#">Brokers</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--end of row-->
+					</div>
+					<!--end of container-->
+				</section>
+
+				<section class="pt0" id="kontak">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6 col-md-5">
+								<h4 class="uppercase">Hubungi Kami</h4>
+								<p>
+										Kami sangat ingin mendengar pendapat Anda tentang sistem kami,
+										juga kami ingin selalu terhubung dengan Anda. Silahkan untuk 
+										mengisi form di bawah ini untuk mengontak kami dan dapatkan
+										perkembangan terbaru dari Agroforestcape.
+								</p>
+								<hr>
+								<p>
+									<strong>Agroforestcape</strong>
+									<br /> Kampus IPB Dramaga, Jalan Raya Dramaga, Babakan, Dramaga
+									<br /> Kota Bogor, Jawa Barat
+									<br /> Kode Pos 16680
+								</p>
+								<hr>
+								<p>
+									<i class="ti-email"></i> agroforestcape.id@gmail.com
+									<br />
+								</p>
+							</div>
+							<div class="col-sm-6 col-md-5 col-md-offset-1">
+								<form class="form-email" data-success="Thanks for your submission, we will be in touch shortly." data-error="Please fill all fields correctly.">
+									<input type="text" class="validate-required" name="name" placeholder="Nama" />
+									<input type="text" class="validate-required" name="phone" placeholder="Nomor Telepon" />
+									<input type="text" class="validate-required validate-email" name="email" placeholder="Alamat Email" />
+									<textarea class="validate-required" name="message" rows="4" placeholder="Pesan"></textarea>
+									<button type="submit">Kirim Pesan</button>
+								</form>
+							</div>
+						</div>
+						<!--end of row-->
+					</div>
+					<!--end of container-->
+				</section>
+
+				<section class="p0" id="maps">
+					<div class="map-holder pt160 pb160">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5769.828379979176!2d106.72289498156229!3d-6.554683479336325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1553354533726"></iframe>
+					</div>
+				</section>
+
+			</div>
+        </main>
+    </body>
+
+	<footer class="image-bg main-footer pb0">
+		<div class="background-image-holder">
+			<img alt="image" class="background-image" src="../img/asset/footer.png"/>
+		</div>
+		<div class="container"><br>
+			<div class="row foot_links">
+				<div class="col-lg-3">
+					<img src="../img/asset/logoweb.png" style="width: 200px; height: 40px;"><br><br>
+					<p class="bold">Temukan kami di:</p>
+					<img src="../img/asset/twitter.png" style="width: 40px; height: 40px;">
+					<img src="../img/asset/facebook.png" style="width: 40px; height: 40px;">
+					<img src="../img/asset/linkedin.png" style="width: 40px; height: 40px;">
+					<img src="../img/asset/youtube.png" style="width: 40px; height: 40px;">
+					<br><br><p>&copy; Copyright 2019 Agroforestcape</p>
+				
+				</div>
+				<div class="col-lg-3">
+					<h5 class="uppercase bold">Navigasi Website</h5>
+					<p><a href="#">Beranda</a></p>
+					<p><a href="#">Fitur</a></p>
+					<p><a href="#">Peran Kami</a></p>
+					<p><a href="#">Kontak Kami</a></p>
+				</div>
+				<div class="col-lg-3">
+					<h5 class="uppercase bold">Pelajari Lebih Lanjut</h5>
+					<p><a href="#">Tentang Agroforestcape</a></p>
+					<p><a href="#">Teknologi Blockchain</a></p>
+					<p><a href="#">Syarat dan Ketentuan</a></p>
+					<p><a href="#">Kebijakan Kami</a></p>
+				</div>
+				<div class="col-lg-3 social">
+					<h5 class="uppercase bold">Kontak Kami</h5>
+					<p><img src="../img/asset/gmail.png" style="width: 25px; height: 16px;">  agroforestcape.id@gmail.com</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <script src="../js/jquery-2.1.4.js"></script>
+    <script src="../js/bootstrap.min.js"></script> 
+		
+	</body>
+	<script src="../js/app.js"></script>
+
+    <script src="../js/main.js"></script>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/flickr.js"></script>
+	<script src="../js/flexslider.min.js"></script>
+	<script src="../js/lightbox.min.js"></script>
+	<script src="../js/masonry.min.js"></script>
+	<script src="../js/twitterfetcher.min.js"></script>
+	<script src="../js/spectragram.min.js"></script>
+	<script src="../js/ytplayer.min.js"></script>
+	<script src="../js/countdown.min.js"></script>
+	<script src="../js/smooth-scroll.min.js"></script>
+	<script src="../js/parallax.js"></script>
+	<script src="../js/scripts.js"></script>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/owl.carousel.min.js"></script>
+	<script src="../js/jquery.magnific-popup.js"></script>
+	<script src="../js/main.js"></script>
+</html>

@@ -1,0 +1,54 @@
+.activity-web{
+    display: block;
+    font-size: 0.8em;
+}
+
+.activity-mobile{
+    display: none;
+}
+
+.work-link{
+    display: block;
+}    
+
+@media only screen and (max-width: 991px){
+    .activity-web{
+        display: none;
+    }
+    
+    .work-content span{
+        font-size: 1em;
+    }
+
+    .activity-mobile{
+        display: block;
+        font-size: 0.8em;
+    }
+    
+    .work-link{
+        display: block;
+    }    
+
+}
+
+@media only screen and (max-width: 500px){
+    .work-link{
+        display: none;
+    }    
+}
+
+@media only screen and (max-width: 390px){
+    .activity-web{
+        display: none;
+    }
+    
+    .work-content span{
+        font-size: 0.7em;
+    }
+
+    .activity-mobile{
+        display: block;
+        font-size: 0.7em;
+    }
+
+}
